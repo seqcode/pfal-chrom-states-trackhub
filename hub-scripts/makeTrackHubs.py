@@ -224,7 +224,6 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
         print(f"    visibility {visibility}")
         print(f"    color {color}")
         print(f"    autoScale off")
-        print(f"    viewLimits auto")
         print(f"    bigDataUrl {big_data_url}")
         print(f"    priority {priority_counter}")
         print("")
@@ -397,7 +396,6 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
             print(f"    color 0,0,170")
             print(f"    autoScale off")
             print(f"    groupAutoScale on")
-            print(f"    viewLimits auto")
         elif view_type == "Peaks":
             print(f"    type bigBed 6 +")
             print(f"    shortLabel {short_label}")

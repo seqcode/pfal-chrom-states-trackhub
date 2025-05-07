@@ -62,7 +62,6 @@ sortOrder timepoint=+ markSource=+
     visibility full
     color 153,50,204
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_05hpi_Bartfai_GSE104075.bw
     priority 1
 
@@ -75,7 +74,6 @@ sortOrder timepoint=+ markSource=+
     visibility full
     color 153,50,204
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_10hpi_Bartfai_GSE104075.bw
     priority 2
 
@@ -88,7 +86,6 @@ sortOrder timepoint=+ markSource=+
     visibility full
     color 153,50,204
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_15hpi_Bartfai_GSE104075.bw
     priority 3
 
@@ -101,7 +98,6 @@ sortOrder timepoint=+ markSource=+
     visibility full
     color 153,50,204
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_20hpi_Bartfai_GSE104075.bw
     priority 4
 
@@ -114,7 +110,6 @@ sortOrder timepoint=+ markSource=+
     visibility full
     color 153,50,204
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_25hpi_Bartfai_GSE104075.bw
     priority 5
 
@@ -127,7 +122,6 @@ sortOrder timepoint=+ markSource=+
     visibility full
     color 153,50,204
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_30hpi_Bartfai_GSE104075.bw
     priority 6
 
@@ -140,7 +134,6 @@ sortOrder timepoint=+ markSource=+
     visibility full
     color 153,50,204
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_35hpi_Bartfai_GSE104075.bw
     priority 7
 
@@ -153,7 +146,6 @@ sortOrder timepoint=+ markSource=+
     visibility full
     color 153,50,204
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_40hpi_Bartfai_GSE104075.bw
     priority 8
 
@@ -166,7 +158,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,0,255
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H2A.Z_10hpi_Duffy_SRP252482.bw
     priority 9
 
@@ -179,7 +170,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,0,255
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H2A-Z_10hpi_Stunnenberg_GSE23787.bw
     priority 10
 
@@ -192,7 +182,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,0,255
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H2A-Z_20hpi_Stunnenberg_GSE23787.bw
     priority 11
 
@@ -205,7 +194,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,0,255
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H2A.Z_30hpi_Duffy_SRP252482.bw
     priority 12
 
@@ -218,7 +206,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,0,255
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H2A-Z_30hpi_Stunnenberg_GSE23787.bw
     priority 13
 
@@ -231,7 +218,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,0,255
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H2A.Z_40hpi_Duffy_SRP252482.bw
     priority 14
 
@@ -244,7 +230,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,0,255
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H2A-Z_40hpi_Stunnenberg_GSE23787.bw
     priority 15
 
@@ -257,7 +242,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,128,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K18ac_10hpi_Duffy_SRP252482.bw
     priority 16
 
@@ -270,7 +254,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,128,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K18ac_30hpi_Duffy_SRP252482.bw
     priority 17
 
@@ -283,7 +266,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,128,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K18ac_40hpi_Duffy_SRP252482.bw
     priority 18
 
@@ -296,7 +278,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,128,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K27ac_10hpi_Duffy_SRP252482.bw
     priority 19
 
@@ -309,7 +290,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,128,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K27ac_30hpi_Duffy_SRP252482.bw
     priority 20
 
@@ -322,7 +302,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,128,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K27ac_40hpi_Duffy_SRP252482.bw
     priority 21
 
@@ -335,7 +314,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 128,128,128
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K4me1_10hpi_Duffy_SRP252482.bw
     priority 22
 
@@ -348,7 +326,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 128,128,128
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K4me1_30hpi_Duffy_SRP252482.bw
     priority 23
 
@@ -361,7 +338,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 128,128,128
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K4me1_40hpi_Duffy_SRP252482.bw
     priority 24
 
@@ -374,7 +350,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,128,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K4me3_10hpi_Stunnenberg_GSE23787.bw
     priority 25
 
@@ -387,7 +362,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,128,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K4me3_20hpi_Stunnenberg_GSE23787.bw
     priority 26
 
@@ -400,7 +374,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,128,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K4me3_30hpi_Stunnenberg_GSE23787.bw
     priority 27
 
@@ -413,7 +386,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,128,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K4me3_40hpi_Stunnenberg_GSE23787.bw
     priority 28
 
@@ -426,7 +398,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,128,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K9ac_10hpi_Stunnenberg_GSE23787.bw
     priority 29
 
@@ -439,7 +410,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,128,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K9ac_20hpi_Stunnenberg_GSE23787.bw
     priority 30
 
@@ -452,7 +422,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,128,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K9ac_30hpi_Stunnenberg_GSE23787.bw
     priority 31
 
@@ -465,7 +434,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 0,128,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K9ac_40hpi_Stunnenberg_GSE23787.bw
     priority 32
 
@@ -478,7 +446,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 255,0,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K9me3_20hpi_Miller_SRP022761.bw
     priority 33
 
@@ -491,7 +458,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 255,0,0
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K9me3_40hpi_Miller_SRP022761.bw
     priority 34
 
@@ -504,7 +470,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 128,128,128
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/HP1_10hpi_Zhang_GSE184659.bw
     priority 35
 
@@ -517,7 +482,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 128,128,128
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/HP1_30hpi_Zhang_GSE184659.bw
     priority 36
 
@@ -530,7 +494,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 128,128,128
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/HP1_40hpi_Voss_GSE154840.bw
     priority 37
 
@@ -543,7 +506,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 128,128,128
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/HP1_40hpi_Zhang_GSE184659.bw
     priority 38
 
@@ -556,7 +518,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 150,150,150
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_10hpi_Duffy_SRP252482.bw
     priority 39
 
@@ -569,7 +530,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 150,150,150
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_10hpi_Stunnenberg_GSE23787.bw
     priority 40
 
@@ -582,7 +542,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 150,150,150
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_10hpi_Zhang_GSE184659.bw
     priority 41
 
@@ -595,7 +554,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 150,150,150
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_20hpi_Bartfai_GSE104075.bw
     priority 42
 
@@ -608,7 +566,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 150,150,150
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_20hpi_Stunnenberg_GSE23787.bw
     priority 43
 
@@ -621,7 +578,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 150,150,150
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_30hpi_Duffy_SRP252482.bw
     priority 44
 
@@ -634,7 +590,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 150,150,150
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_30hpi_Stunnenberg_GSE23787.bw
     priority 45
 
@@ -647,7 +602,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 150,150,150
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_30hpi_Zhang_GSE184659.bw
     priority 46
 
@@ -660,7 +614,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 150,150,150
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_40hpi_Duffy_SRP252482.bw
     priority 47
 
@@ -673,7 +626,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 150,150,150
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_40hpi_Stunnenberg_GSE23787.bw
     priority 48
 
@@ -686,7 +638,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 150,150,150
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_40hpi_Voss_GSE154840.bw
     priority 49
 
@@ -699,7 +650,6 @@ sortOrder timepoint=+ markSource=+
     visibility hide
     color 150,150,150
     autoScale off
-    viewLimits auto
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_40hpi_Zhang_GSE184659.bw
     priority 50
 
