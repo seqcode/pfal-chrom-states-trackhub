@@ -155,7 +155,6 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
     print(f"type bigWig")
     print(f"autoScale off")
     print(f"groupAutoScale on")
-    #print(f"maxHeightPixels 100:32:8")
     print(f"group regulation")
     print(f"priority 20")
     print(f"dragAndDrop subTracks") # Enable drag-and-drop rearrangement
@@ -165,7 +164,7 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
     sg1_items = " ".join([f"{tag}={val}" for val, tag in timepoint_tags.items()])
     print(f"subGroup1 timepoint Timepoint {sg1_items}")
 
-    sg2_items = " ".join([f"{tag}={val.replace('_', ' ')}" for val, tag in mark_source_tags.items()]) # Use original key for display value
+    sg2_items = " ".join([f"{tag}={val}" for val, tag in mark_source_tags.items()]) # Use original key for display value
     print(f"subGroup2 markSource Mark_Source {sg2_items}")
 
     # Dimensions and Sorting
@@ -174,7 +173,7 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
     print("")
 
     # --- Second Pass: Print Subtrack Entries ---
-    priority_counter = 1 # Reset priority counter for subtracks
+    priority_counter = 21 # Reset priority counter for subtracks
     for data in subtrack_data:
         # Retrieve data from the stored dictionary
         filename = data['filename']
@@ -345,8 +344,8 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
     print(f"subGroup1 view Views Signal={view_map['Signal']} Peaks={view_map['Peaks']}")
     sg2_items = " ".join([f"{tag}={val}" for val, tag in timepoint_tags.items()])
     print(f"subGroup2 timepoint Timepoint {sg2_items}")
-    # For subGroup3, display value is "TF (Source)"
-    sg3_items = " ".join([f"{tag}={key[0]} ({key[1]})" for key, tag in factor_source_tags.items()])
+    # For subGroup3, display value is "TF_Source"
+    sg3_items = " ".join([f"{tag}={key[0]}_{key[1]}" for key, tag in factor_source_tags.items()])
     print(f"subGroup3 factorSource Factor_Source {sg3_items}")
     
 

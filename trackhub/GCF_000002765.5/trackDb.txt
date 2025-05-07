@@ -49,7 +49,7 @@ priority 20
 dragAndDrop subTracks
 noInherit on
 subGroup1 timepoint Timepoint t05=05hpi t10=10hpi t15=15hpi t20=20hpi t25=25hpi t30=30hpi t35=35hpi t40=40hpi
-subGroup2 markSource Mark_Source msATACBartfai=ATAC Bartfai msH2AZDuffy=H2A.Z Duffy msH2AZStunnenberg=H2A.Z Stunnenberg msH3K18acDuffy=H3K18ac Duffy msH3K27acDuffy=H3K27ac Duffy msH3K4me1Duffy=H3K4me1 Duffy msH3K4me3Stunnenberg=H3K4me3 Stunnenberg msH3K9acStunnenberg=H3K9ac Stunnenberg msH3K9me3Miller=H3K9me3 Miller msHP1Voss=HP1 Voss msHP1Zhang=HP1 Zhang msINPUTBartfai=INPUT Bartfai msINPUTDuffy=INPUT Duffy msINPUTStunnenberg=INPUT Stunnenberg msINPUTVoss=INPUT Voss msINPUTZhang=INPUT Zhang
+subGroup2 markSource Mark_Source msATACBartfai=ATAC_Bartfai msH2AZDuffy=H2A.Z_Duffy msH2AZStunnenberg=H2A.Z_Stunnenberg msH3K18acDuffy=H3K18ac_Duffy msH3K27acDuffy=H3K27ac_Duffy msH3K4me1Duffy=H3K4me1_Duffy msH3K4me3Stunnenberg=H3K4me3_Stunnenberg msH3K9acStunnenberg=H3K9ac_Stunnenberg msH3K9me3Miller=H3K9me3_Miller msHP1Voss=HP1_Voss msHP1Zhang=HP1_Zhang msINPUTBartfai=INPUT_Bartfai msINPUTDuffy=INPUT_Duffy msINPUTStunnenberg=INPUT_Stunnenberg msINPUTVoss=INPUT_Voss msINPUTZhang=INPUT_Zhang
 dimensions dimX=timepoint dimY=markSource
 sortOrder timepoint=+ markSource=+
 
@@ -63,7 +63,7 @@ sortOrder timepoint=+ markSource=+
     color 153,50,204
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_05hpi_Bartfai_GSE104075.bw
-    priority 1
+    priority 21
 
     track PfalHistoneMarks_ATAC_10hpi_Bartfai
     parent PfalHistoneMarks on
@@ -75,7 +75,7 @@ sortOrder timepoint=+ markSource=+
     color 153,50,204
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_10hpi_Bartfai_GSE104075.bw
-    priority 2
+    priority 22
 
     track PfalHistoneMarks_ATAC_15hpi_Bartfai
     parent PfalHistoneMarks on
@@ -87,7 +87,7 @@ sortOrder timepoint=+ markSource=+
     color 153,50,204
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_15hpi_Bartfai_GSE104075.bw
-    priority 3
+    priority 23
 
     track PfalHistoneMarks_ATAC_20hpi_Bartfai
     parent PfalHistoneMarks on
@@ -99,7 +99,7 @@ sortOrder timepoint=+ markSource=+
     color 153,50,204
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_20hpi_Bartfai_GSE104075.bw
-    priority 4
+    priority 24
 
     track PfalHistoneMarks_ATAC_25hpi_Bartfai
     parent PfalHistoneMarks on
@@ -111,7 +111,7 @@ sortOrder timepoint=+ markSource=+
     color 153,50,204
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_25hpi_Bartfai_GSE104075.bw
-    priority 5
+    priority 25
 
     track PfalHistoneMarks_ATAC_30hpi_Bartfai
     parent PfalHistoneMarks on
@@ -123,7 +123,7 @@ sortOrder timepoint=+ markSource=+
     color 153,50,204
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_30hpi_Bartfai_GSE104075.bw
-    priority 6
+    priority 26
 
     track PfalHistoneMarks_ATAC_35hpi_Bartfai
     parent PfalHistoneMarks on
@@ -135,7 +135,7 @@ sortOrder timepoint=+ markSource=+
     color 153,50,204
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_35hpi_Bartfai_GSE104075.bw
-    priority 7
+    priority 27
 
     track PfalHistoneMarks_ATAC_40hpi_Bartfai
     parent PfalHistoneMarks on
@@ -147,7 +147,7 @@ sortOrder timepoint=+ markSource=+
     color 153,50,204
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/ATAC_40hpi_Bartfai_GSE104075.bw
-    priority 8
+    priority 28
 
     track PfalHistoneMarks_H2AzZ_10hpi_Duffy
     parent PfalHistoneMarks on
@@ -159,7 +159,7 @@ sortOrder timepoint=+ markSource=+
     color 0,0,255
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H2A.Z_10hpi_Duffy_SRP252482.bw
-    priority 9
+    priority 29
 
     track PfalHistoneMarks_H2AzZ_10hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -171,7 +171,7 @@ sortOrder timepoint=+ markSource=+
     color 0,0,255
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H2A-Z_10hpi_Stunnenberg_GSE23787.bw
-    priority 10
+    priority 30
 
     track PfalHistoneMarks_H2AzZ_20hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -183,7 +183,7 @@ sortOrder timepoint=+ markSource=+
     color 0,0,255
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H2A-Z_20hpi_Stunnenberg_GSE23787.bw
-    priority 11
+    priority 31
 
     track PfalHistoneMarks_H2AzZ_30hpi_Duffy
     parent PfalHistoneMarks on
@@ -195,7 +195,7 @@ sortOrder timepoint=+ markSource=+
     color 0,0,255
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H2A.Z_30hpi_Duffy_SRP252482.bw
-    priority 12
+    priority 32
 
     track PfalHistoneMarks_H2AzZ_30hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -207,7 +207,7 @@ sortOrder timepoint=+ markSource=+
     color 0,0,255
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H2A-Z_30hpi_Stunnenberg_GSE23787.bw
-    priority 13
+    priority 33
 
     track PfalHistoneMarks_H2AzZ_40hpi_Duffy
     parent PfalHistoneMarks on
@@ -219,7 +219,7 @@ sortOrder timepoint=+ markSource=+
     color 0,0,255
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H2A.Z_40hpi_Duffy_SRP252482.bw
-    priority 14
+    priority 34
 
     track PfalHistoneMarks_H2AzZ_40hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -231,7 +231,7 @@ sortOrder timepoint=+ markSource=+
     color 0,0,255
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H2A-Z_40hpi_Stunnenberg_GSE23787.bw
-    priority 15
+    priority 35
 
     track PfalHistoneMarks_H3K18ac_10hpi_Duffy
     parent PfalHistoneMarks on
@@ -243,7 +243,7 @@ sortOrder timepoint=+ markSource=+
     color 0,128,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K18ac_10hpi_Duffy_SRP252482.bw
-    priority 16
+    priority 36
 
     track PfalHistoneMarks_H3K18ac_30hpi_Duffy
     parent PfalHistoneMarks on
@@ -255,7 +255,7 @@ sortOrder timepoint=+ markSource=+
     color 0,128,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K18ac_30hpi_Duffy_SRP252482.bw
-    priority 17
+    priority 37
 
     track PfalHistoneMarks_H3K18ac_40hpi_Duffy
     parent PfalHistoneMarks on
@@ -267,7 +267,7 @@ sortOrder timepoint=+ markSource=+
     color 0,128,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K18ac_40hpi_Duffy_SRP252482.bw
-    priority 18
+    priority 38
 
     track PfalHistoneMarks_H3K27ac_10hpi_Duffy
     parent PfalHistoneMarks on
@@ -279,7 +279,7 @@ sortOrder timepoint=+ markSource=+
     color 0,128,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K27ac_10hpi_Duffy_SRP252482.bw
-    priority 19
+    priority 39
 
     track PfalHistoneMarks_H3K27ac_30hpi_Duffy
     parent PfalHistoneMarks on
@@ -291,7 +291,7 @@ sortOrder timepoint=+ markSource=+
     color 0,128,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K27ac_30hpi_Duffy_SRP252482.bw
-    priority 20
+    priority 40
 
     track PfalHistoneMarks_H3K27ac_40hpi_Duffy
     parent PfalHistoneMarks on
@@ -303,7 +303,7 @@ sortOrder timepoint=+ markSource=+
     color 0,128,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K27ac_40hpi_Duffy_SRP252482.bw
-    priority 21
+    priority 41
 
     track PfalHistoneMarks_H3K4me1_10hpi_Duffy
     parent PfalHistoneMarks on
@@ -315,7 +315,7 @@ sortOrder timepoint=+ markSource=+
     color 128,128,128
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K4me1_10hpi_Duffy_SRP252482.bw
-    priority 22
+    priority 42
 
     track PfalHistoneMarks_H3K4me1_30hpi_Duffy
     parent PfalHistoneMarks on
@@ -327,7 +327,7 @@ sortOrder timepoint=+ markSource=+
     color 128,128,128
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K4me1_30hpi_Duffy_SRP252482.bw
-    priority 23
+    priority 43
 
     track PfalHistoneMarks_H3K4me1_40hpi_Duffy
     parent PfalHistoneMarks on
@@ -339,7 +339,7 @@ sortOrder timepoint=+ markSource=+
     color 128,128,128
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K4me1_40hpi_Duffy_SRP252482.bw
-    priority 24
+    priority 44
 
     track PfalHistoneMarks_H3K4me3_10hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -351,7 +351,7 @@ sortOrder timepoint=+ markSource=+
     color 0,128,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K4me3_10hpi_Stunnenberg_GSE23787.bw
-    priority 25
+    priority 45
 
     track PfalHistoneMarks_H3K4me3_20hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -363,7 +363,7 @@ sortOrder timepoint=+ markSource=+
     color 0,128,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K4me3_20hpi_Stunnenberg_GSE23787.bw
-    priority 26
+    priority 46
 
     track PfalHistoneMarks_H3K4me3_30hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -375,7 +375,7 @@ sortOrder timepoint=+ markSource=+
     color 0,128,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K4me3_30hpi_Stunnenberg_GSE23787.bw
-    priority 27
+    priority 47
 
     track PfalHistoneMarks_H3K4me3_40hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -387,7 +387,7 @@ sortOrder timepoint=+ markSource=+
     color 0,128,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K4me3_40hpi_Stunnenberg_GSE23787.bw
-    priority 28
+    priority 48
 
     track PfalHistoneMarks_H3K9ac_10hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -399,7 +399,7 @@ sortOrder timepoint=+ markSource=+
     color 0,128,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K9ac_10hpi_Stunnenberg_GSE23787.bw
-    priority 29
+    priority 49
 
     track PfalHistoneMarks_H3K9ac_20hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -411,7 +411,7 @@ sortOrder timepoint=+ markSource=+
     color 0,128,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K9ac_20hpi_Stunnenberg_GSE23787.bw
-    priority 30
+    priority 50
 
     track PfalHistoneMarks_H3K9ac_30hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -423,7 +423,7 @@ sortOrder timepoint=+ markSource=+
     color 0,128,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K9ac_30hpi_Stunnenberg_GSE23787.bw
-    priority 31
+    priority 51
 
     track PfalHistoneMarks_H3K9ac_40hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -435,7 +435,7 @@ sortOrder timepoint=+ markSource=+
     color 0,128,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K9ac_40hpi_Stunnenberg_GSE23787.bw
-    priority 32
+    priority 52
 
     track PfalHistoneMarks_H3K9me3_20hpi_Miller
     parent PfalHistoneMarks on
@@ -447,7 +447,7 @@ sortOrder timepoint=+ markSource=+
     color 255,0,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K9me3_20hpi_Miller_SRP022761.bw
-    priority 33
+    priority 53
 
     track PfalHistoneMarks_H3K9me3_40hpi_Miller
     parent PfalHistoneMarks on
@@ -459,7 +459,7 @@ sortOrder timepoint=+ markSource=+
     color 255,0,0
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/H3K9me3_40hpi_Miller_SRP022761.bw
-    priority 34
+    priority 54
 
     track PfalHistoneMarks_HP1_10hpi_Zhang
     parent PfalHistoneMarks on
@@ -471,7 +471,7 @@ sortOrder timepoint=+ markSource=+
     color 128,128,128
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/HP1_10hpi_Zhang_GSE184659.bw
-    priority 35
+    priority 55
 
     track PfalHistoneMarks_HP1_30hpi_Zhang
     parent PfalHistoneMarks on
@@ -483,7 +483,7 @@ sortOrder timepoint=+ markSource=+
     color 128,128,128
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/HP1_30hpi_Zhang_GSE184659.bw
-    priority 36
+    priority 56
 
     track PfalHistoneMarks_HP1_40hpi_Voss
     parent PfalHistoneMarks on
@@ -495,7 +495,7 @@ sortOrder timepoint=+ markSource=+
     color 128,128,128
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/HP1_40hpi_Voss_GSE154840.bw
-    priority 37
+    priority 57
 
     track PfalHistoneMarks_HP1_40hpi_Zhang
     parent PfalHistoneMarks on
@@ -507,7 +507,7 @@ sortOrder timepoint=+ markSource=+
     color 128,128,128
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/HP1_40hpi_Zhang_GSE184659.bw
-    priority 38
+    priority 58
 
     track PfalHistoneMarks_INPUT_10hpi_Duffy
     parent PfalHistoneMarks on
@@ -519,7 +519,7 @@ sortOrder timepoint=+ markSource=+
     color 150,150,150
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_10hpi_Duffy_SRP252482.bw
-    priority 39
+    priority 59
 
     track PfalHistoneMarks_INPUT_10hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -531,7 +531,7 @@ sortOrder timepoint=+ markSource=+
     color 150,150,150
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_10hpi_Stunnenberg_GSE23787.bw
-    priority 40
+    priority 60
 
     track PfalHistoneMarks_INPUT_10hpi_Zhang
     parent PfalHistoneMarks on
@@ -543,7 +543,7 @@ sortOrder timepoint=+ markSource=+
     color 150,150,150
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_10hpi_Zhang_GSE184659.bw
-    priority 41
+    priority 61
 
     track PfalHistoneMarks_INPUT_20hpi_Bartfai
     parent PfalHistoneMarks on
@@ -555,7 +555,7 @@ sortOrder timepoint=+ markSource=+
     color 150,150,150
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_20hpi_Bartfai_GSE104075.bw
-    priority 42
+    priority 62
 
     track PfalHistoneMarks_INPUT_20hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -567,7 +567,7 @@ sortOrder timepoint=+ markSource=+
     color 150,150,150
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_20hpi_Stunnenberg_GSE23787.bw
-    priority 43
+    priority 63
 
     track PfalHistoneMarks_INPUT_30hpi_Duffy
     parent PfalHistoneMarks on
@@ -579,7 +579,7 @@ sortOrder timepoint=+ markSource=+
     color 150,150,150
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_30hpi_Duffy_SRP252482.bw
-    priority 44
+    priority 64
 
     track PfalHistoneMarks_INPUT_30hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -591,7 +591,7 @@ sortOrder timepoint=+ markSource=+
     color 150,150,150
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_30hpi_Stunnenberg_GSE23787.bw
-    priority 45
+    priority 65
 
     track PfalHistoneMarks_INPUT_30hpi_Zhang
     parent PfalHistoneMarks on
@@ -603,7 +603,7 @@ sortOrder timepoint=+ markSource=+
     color 150,150,150
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_30hpi_Zhang_GSE184659.bw
-    priority 46
+    priority 66
 
     track PfalHistoneMarks_INPUT_40hpi_Duffy
     parent PfalHistoneMarks on
@@ -615,7 +615,7 @@ sortOrder timepoint=+ markSource=+
     color 150,150,150
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_40hpi_Duffy_SRP252482.bw
-    priority 47
+    priority 67
 
     track PfalHistoneMarks_INPUT_40hpi_Stunnenberg
     parent PfalHistoneMarks on
@@ -627,7 +627,7 @@ sortOrder timepoint=+ markSource=+
     color 150,150,150
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_40hpi_Stunnenberg_GSE23787.bw
-    priority 48
+    priority 68
 
     track PfalHistoneMarks_INPUT_40hpi_Voss
     parent PfalHistoneMarks on
@@ -639,7 +639,7 @@ sortOrder timepoint=+ markSource=+
     color 150,150,150
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_40hpi_Voss_GSE154840.bw
-    priority 49
+    priority 69
 
     track PfalHistoneMarks_INPUT_40hpi_Zhang
     parent PfalHistoneMarks on
@@ -651,5 +651,5 @@ sortOrder timepoint=+ markSource=+
     color 150,150,150
     autoScale off
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/INPUT_40hpi_Zhang_GSE184659.bw
-    priority 50
+    priority 70
 
