@@ -153,6 +153,7 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
     print(f"shortLabel Histone Marks")
     print(f"longLabel P. falciparum Histone Marks and Accessibility")
     print(f"type bigWig")
+    print(f"visibility full")
     print(f"autoScale off")
     print(f"groupAutoScale on")
     print(f"group regulation")

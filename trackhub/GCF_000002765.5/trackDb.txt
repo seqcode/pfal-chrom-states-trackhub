@@ -42,6 +42,7 @@ compositeTrack on
 shortLabel Histone Marks
 longLabel P. falciparum Histone Marks and Accessibility
 type bigWig
+visibility full
 autoScale off
 groupAutoScale on
 group regulation
