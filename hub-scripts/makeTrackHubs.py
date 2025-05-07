@@ -378,7 +378,7 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
         short_label = f"{tf_name} ({source_name}) {timepoint} {short_label_view_suffix}"
         long_label = f"TF {tf_name} ({source_name}) at {timepoint} from {source_id} - {view_type}"
 
-        selected="on"
+        selected="off"
         if "AP2-EXP" in tf_name.upper():
             selected = "on"
 
