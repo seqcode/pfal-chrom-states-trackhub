@@ -348,8 +348,28 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
     # Dimensions and Sorting
     print(f"dimensions dimX=factorSource dimY=timepoint dimA=view") # Adjusted dimensions
     print(f"sortOrder timepoint=+ factorSource=+ view=+") # Adjusted sort order
+    print(f"type bed 3")
     print("")
 
+    #Signal subtracks
+    print(f"track {parent_track_id}_Signal")
+    print(f"parent {parent_track_id}")
+    print(f"shortLabel Signal")
+    print(f"view sig")
+    print(f"visibility full")
+    print(f"type bigWig")
+    print(f"viewUi on")
+    print("")
+
+    #Peaks subtracks
+    print(f"track {parent_track_id}_Peaks")
+    print(f"parent {parent_track_id}")
+    print(f"shortLabel Peaks")
+    print(f"view pk")
+    print(f"visibility dense")
+    print(f"type bigBed 6 +")
+    print(f"viewUi on")
+    print("")
 
     # --- Second Pass: Print Subtrack Entries ---
     priority_counter = 101
@@ -383,11 +403,10 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
             selected = "on"
 
         print(f"    track {track_line_id}")
-        print(f"    parent {parent_track_id} {selected}")
-        # Adjusted subGroups attribute
-        print(f"    subGroups view={view_tag} factorSource={fs_tag} timepoint={tp_tag}")
-        
+
         if view_type == "Signal":
+            print(f"    parent {parent_track_id}_Signal {selected}")
+            print(f"    subGroups view={view_tag} factorSource={fs_tag} timepoint={tp_tag}")
             print(f"    type bigWig")
             print(f"    shortLabel {short_label}")
             print(f"    longLabel {long_label}")
@@ -395,6 +414,8 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
             print(f"    autoScale off")
             print(f"    groupAutoScale on")
         elif view_type == "Peaks":
+            print(f"    parent {parent_track_id}_Peaks {selected}")
+            print(f"    subGroups view={view_tag} factorSource={fs_tag} timepoint={tp_tag}")
             print(f"    type bigBed 6 +")
             print(f"    shortLabel {short_label}")
             print(f"    longLabel {long_label}")

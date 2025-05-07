@@ -615,9 +615,26 @@ subGroup2 timepoint Timepoint t05=05hpi t10=10hpi t16=16hpi t25=25hpi t30=30hpi 
 subGroup3 factorSource Factor_Source fsAP2EXPLlina=AP2-EXP_Llinas fsAP2EXPZhang=AP2-EXP_Zhang fsAP2EXP2Zhang=AP2-EXP2_Zhang fsAP2GLlina=AP2-G_Llinas fsAP2GZhang=AP2-G_Zhang fsAP2G2Llina=AP2-G2_Llinas fsAP2G2Zhang=AP2-G2_Zhang fsAP2G3Zhang=AP2-G3_Zhang fsAP2G4Zhang=AP2-G4_Zhang fsAP2G5Zhang=AP2-G5_Zhang fsAP2HCVoss=AP2-HC_Voss fsAP2HCZhang=AP2-HC_Zhang fsAP2HSCorte=AP2-HS_Cortes fsAP2HSZhang=AP2-HS_Zhang fsAP2ILlina=AP2-I_Llinas fsAP2LZhang=AP2-L_Zhang fsAP2LTLlina=AP2-LT_Llinas fsAP2LTZhang=AP2-LT_Zhang fsAP2O2Zhang=AP2-O2_Zhang fsAP2O5Zhang=AP2-O5_Zhang fsAP2PLeRoc=AP2-P_LeRoch fsAP2PZhang=AP2-P_Zhang fsPF3D706138Zhang=PF3D7_0613800_Zhang fsPF3D711155Zhang=PF3D7_1115500_Zhang fsPF3D712392Zhang=PF3D7_1239200_Zhang fsSIP2Voss=SIP2_Voss
 dimensions dimX=factorSource dimY=timepoint dimA=view
 sortOrder timepoint=+ factorSource=+ view=+
+type bed 3
+
+track PfalTFs_Signal
+parent PfalTFs
+shortLabel Signal
+view sig
+visibility full
+type bigWig
+viewUi on
+
+track PfalTFs_Peaks
+parent PfalTFs
+shortLabel Peaks
+view pk
+visibility dense
+type bigBed 6 +
+viewUi on
 
     track PfalTFs_AP2EXP_Zhang_10hpi_sig
-    parent PfalTFs on
+    parent PfalTFs_Signal on
     subGroups view=sig factorSource=fsAP2EXPZhang timepoint=t10
     type bigWig
     shortLabel AP2-EXP (Zhang) 10hpi Sig
@@ -629,7 +646,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 101
 
     track PfalTFs_AP2EXP_Zhang_10hpi_pk
-    parent PfalTFs on
+    parent PfalTFs_Peaks on
     subGroups view=pk factorSource=fsAP2EXPZhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-EXP (Zhang) 10hpi Pks
@@ -639,7 +656,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 102
 
     track PfalTFs_AP2EXP2_Zhang_40hpi_sig
-    parent PfalTFs on
+    parent PfalTFs_Signal on
     subGroups view=sig factorSource=fsAP2EXP2Zhang timepoint=t40
     type bigWig
     shortLabel AP2-EXP2 (Zhang) 40hpi Sig
@@ -651,7 +668,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 103
 
     track PfalTFs_AP2EXP2_Zhang_40hpi_pk
-    parent PfalTFs on
+    parent PfalTFs_Peaks on
     subGroups view=pk factorSource=fsAP2EXP2Zhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-EXP2 (Zhang) 40hpi Pks
@@ -661,7 +678,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 104
 
     track PfalTFs_AP2EXP_Zhang_25hpi_sig
-    parent PfalTFs on
+    parent PfalTFs_Signal on
     subGroups view=sig factorSource=fsAP2EXPZhang timepoint=t25
     type bigWig
     shortLabel AP2-EXP (Zhang) 25hpi Sig
@@ -673,7 +690,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 105
 
     track PfalTFs_AP2EXP_Zhang_25hpi_pk
-    parent PfalTFs on
+    parent PfalTFs_Peaks on
     subGroups view=pk factorSource=fsAP2EXPZhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-EXP (Zhang) 25hpi Pks
@@ -683,7 +700,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 106
 
     track PfalTFs_AP2EXP_Llinas_30hpi_sig
-    parent PfalTFs on
+    parent PfalTFs_Signal on
     subGroups view=sig factorSource=fsAP2EXPLlina timepoint=t30
     type bigWig
     shortLabel AP2-EXP (Llinas) 30hpi Sig
@@ -695,7 +712,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 107
 
     track PfalTFs_AP2EXP_Llinas_30hpi_pk
-    parent PfalTFs on
+    parent PfalTFs_Peaks on
     subGroups view=pk factorSource=fsAP2EXPLlina timepoint=t30
     type bigBed 6 +
     shortLabel AP2-EXP (Llinas) 30hpi Pks
@@ -705,7 +722,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 108
 
     track PfalTFs_AP2EXP_Zhang_40hpi_sig
-    parent PfalTFs on
+    parent PfalTFs_Signal on
     subGroups view=sig factorSource=fsAP2EXPZhang timepoint=t40
     type bigWig
     shortLabel AP2-EXP (Zhang) 40hpi Sig
@@ -717,7 +734,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 109
 
     track PfalTFs_AP2EXP_Zhang_40hpi_pk
-    parent PfalTFs on
+    parent PfalTFs_Peaks on
     subGroups view=pk factorSource=fsAP2EXPZhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-EXP (Zhang) 40hpi Pks
@@ -727,7 +744,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 110
 
     track PfalTFs_AP2G_Llinas_05hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2GLlina timepoint=t05
     type bigWig
     shortLabel AP2-G (Llinas) 05hpi Sig
@@ -739,7 +756,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 111
 
     track PfalTFs_AP2G_Llinas_05hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2GLlina timepoint=t05
     type bigBed 6 +
     shortLabel AP2-G (Llinas) 05hpi Pks
@@ -749,7 +766,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 112
 
     track PfalTFs_AP2G2_Zhang_10hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2G2Zhang timepoint=t10
     type bigWig
     shortLabel AP2-G2 (Zhang) 10hpi Sig
@@ -761,7 +778,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 113
 
     track PfalTFs_AP2G2_Zhang_10hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2G2Zhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-G2 (Zhang) 10hpi Pks
@@ -771,7 +788,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 114
 
     track PfalTFs_AP2G2_Zhang_25hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2G2Zhang timepoint=t25
     type bigWig
     shortLabel AP2-G2 (Zhang) 25hpi Sig
@@ -783,7 +800,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 115
 
     track PfalTFs_AP2G2_Zhang_25hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2G2Zhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-G2 (Zhang) 25hpi Pks
@@ -793,7 +810,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 116
 
     track PfalTFs_AP2G2_Llinas_30hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2G2Llina timepoint=t30
     type bigWig
     shortLabel AP2-G2 (Llinas) 30hpi Sig
@@ -805,7 +822,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 117
 
     track PfalTFs_AP2G2_Llinas_30hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2G2Llina timepoint=t30
     type bigBed 6 +
     shortLabel AP2-G2 (Llinas) 30hpi Pks
@@ -815,7 +832,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 118
 
     track PfalTFs_AP2G2_Zhang_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2G2Zhang timepoint=t40
     type bigWig
     shortLabel AP2-G2 (Zhang) 40hpi Sig
@@ -827,7 +844,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 119
 
     track PfalTFs_AP2G2_Zhang_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2G2Zhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-G2 (Zhang) 40hpi Pks
@@ -837,7 +854,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 120
 
     track PfalTFs_AP2G_Zhang_30hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2GZhang timepoint=t30
     type bigWig
     shortLabel AP2-G (Zhang) 30hpi Sig
@@ -849,7 +866,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 121
 
     track PfalTFs_AP2G_Zhang_30hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2GZhang timepoint=t30
     type bigBed 6 +
     shortLabel AP2-G (Zhang) 30hpi Pks
@@ -859,7 +876,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 122
 
     track PfalTFs_AP2G3_Zhang_10hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2G3Zhang timepoint=t10
     type bigWig
     shortLabel AP2-G3 (Zhang) 10hpi Sig
@@ -871,7 +888,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 123
 
     track PfalTFs_AP2G3_Zhang_10hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2G3Zhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-G3 (Zhang) 10hpi Pks
@@ -881,7 +898,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 124
 
     track PfalTFs_AP2G3_Zhang_25hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2G3Zhang timepoint=t25
     type bigWig
     shortLabel AP2-G3 (Zhang) 25hpi Sig
@@ -893,7 +910,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 125
 
     track PfalTFs_AP2G3_Zhang_25hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2G3Zhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-G3 (Zhang) 25hpi Pks
@@ -903,7 +920,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 126
 
     track PfalTFs_AP2G3_Zhang_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2G3Zhang timepoint=t40
     type bigWig
     shortLabel AP2-G3 (Zhang) 40hpi Sig
@@ -915,7 +932,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 127
 
     track PfalTFs_AP2G3_Zhang_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2G3Zhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-G3 (Zhang) 40hpi Pks
@@ -925,7 +942,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 128
 
     track PfalTFs_AP2G_Llinas_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2GLlina timepoint=t40
     type bigWig
     shortLabel AP2-G (Llinas) 40hpi Sig
@@ -937,7 +954,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 129
 
     track PfalTFs_AP2G_Llinas_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2GLlina timepoint=t40
     type bigBed 6 +
     shortLabel AP2-G (Llinas) 40hpi Pks
@@ -947,7 +964,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 130
 
     track PfalTFs_AP2G4_Zhang_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2G4Zhang timepoint=t40
     type bigWig
     shortLabel AP2-G4 (Zhang) 40hpi Sig
@@ -959,7 +976,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 131
 
     track PfalTFs_AP2G4_Zhang_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2G4Zhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-G4 (Zhang) 40hpi Pks
@@ -969,7 +986,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 132
 
     track PfalTFs_AP2G5_Zhang_10hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2G5Zhang timepoint=t10
     type bigWig
     shortLabel AP2-G5 (Zhang) 10hpi Sig
@@ -981,7 +998,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 133
 
     track PfalTFs_AP2G5_Zhang_10hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2G5Zhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-G5 (Zhang) 10hpi Pks
@@ -991,7 +1008,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 134
 
     track PfalTFs_AP2G5_Zhang_25hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2G5Zhang timepoint=t25
     type bigWig
     shortLabel AP2-G5 (Zhang) 25hpi Sig
@@ -1003,7 +1020,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 135
 
     track PfalTFs_AP2G5_Zhang_25hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2G5Zhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-G5 (Zhang) 25hpi Pks
@@ -1013,7 +1030,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 136
 
     track PfalTFs_AP2G5_Zhang_30hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2G5Zhang timepoint=t30
     type bigWig
     shortLabel AP2-G5 (Zhang) 30hpi Sig
@@ -1025,7 +1042,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 137
 
     track PfalTFs_AP2G5_Zhang_30hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2G5Zhang timepoint=t30
     type bigBed 6 +
     shortLabel AP2-G5 (Zhang) 30hpi Pks
@@ -1035,7 +1052,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 138
 
     track PfalTFs_AP2G5_Zhang_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2G5Zhang timepoint=t40
     type bigWig
     shortLabel AP2-G5 (Zhang) 40hpi Sig
@@ -1047,7 +1064,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 139
 
     track PfalTFs_AP2G5_Zhang_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2G5Zhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-G5 (Zhang) 40hpi Pks
@@ -1057,7 +1074,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 140
 
     track PfalTFs_AP2HC_Zhang_10hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2HCZhang timepoint=t10
     type bigWig
     shortLabel AP2-HC (Zhang) 10hpi Sig
@@ -1069,7 +1086,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 141
 
     track PfalTFs_AP2HC_Zhang_10hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2HCZhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-HC (Zhang) 10hpi Pks
@@ -1079,7 +1096,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 142
 
     track PfalTFs_AP2HC_Zhang_25hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2HCZhang timepoint=t25
     type bigWig
     shortLabel AP2-HC (Zhang) 25hpi Sig
@@ -1091,7 +1108,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 143
 
     track PfalTFs_AP2HC_Zhang_25hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2HCZhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-HC (Zhang) 25hpi Pks
@@ -1101,7 +1118,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 144
 
     track PfalTFs_AP2HC_Voss_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2HCVoss timepoint=t40
     type bigWig
     shortLabel AP2-HC (Voss) 40hpi Sig
@@ -1113,7 +1130,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 145
 
     track PfalTFs_AP2HC_Voss_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2HCVoss timepoint=t40
     type bigBed 6 +
     shortLabel AP2-HC (Voss) 40hpi Pks
@@ -1123,7 +1140,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 146
 
     track PfalTFs_AP2HC_Zhang_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2HCZhang timepoint=t40
     type bigWig
     shortLabel AP2-HC (Zhang) 40hpi Sig
@@ -1135,7 +1152,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 147
 
     track PfalTFs_AP2HC_Zhang_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2HCZhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-HC (Zhang) 40hpi Pks
@@ -1145,7 +1162,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 148
 
     track PfalTFs_AP2HS_Zhang_10hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2HSZhang timepoint=t10
     type bigWig
     shortLabel AP2-HS (Zhang) 10hpi Sig
@@ -1157,7 +1174,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 149
 
     track PfalTFs_AP2HS_Zhang_10hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2HSZhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-HS (Zhang) 10hpi Pks
@@ -1167,7 +1184,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 150
 
     track PfalTFs_AP2HS_Zhang_25hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2HSZhang timepoint=t25
     type bigWig
     shortLabel AP2-HS (Zhang) 25hpi Sig
@@ -1179,7 +1196,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 151
 
     track PfalTFs_AP2HS_Zhang_25hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2HSZhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-HS (Zhang) 25hpi Pks
@@ -1189,7 +1206,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 152
 
     track PfalTFs_AP2HS_Cortes_30hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2HSCorte timepoint=t30
     type bigWig
     shortLabel AP2-HS (Cortes) 30hpi Sig
@@ -1201,7 +1218,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 153
 
     track PfalTFs_AP2HS_Cortes_30hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2HSCorte timepoint=t30
     type bigBed 6 +
     shortLabel AP2-HS (Cortes) 30hpi Pks
@@ -1211,7 +1228,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 154
 
     track PfalTFs_AP2HS_Zhang_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2HSZhang timepoint=t40
     type bigWig
     shortLabel AP2-HS (Zhang) 40hpi Sig
@@ -1223,7 +1240,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 155
 
     track PfalTFs_AP2HS_Zhang_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2HSZhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-HS (Zhang) 40hpi Pks
@@ -1233,7 +1250,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 156
 
     track PfalTFs_AP2I_Llinas_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2ILlina timepoint=t40
     type bigWig
     shortLabel AP2-I (Llinas) 40hpi Sig
@@ -1245,7 +1262,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 157
 
     track PfalTFs_AP2I_Llinas_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2ILlina timepoint=t40
     type bigBed 6 +
     shortLabel AP2-I (Llinas) 40hpi Pks
@@ -1255,7 +1272,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 158
 
     track PfalTFs_AP2L_Zhang_10hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2LZhang timepoint=t10
     type bigWig
     shortLabel AP2-L (Zhang) 10hpi Sig
@@ -1267,7 +1284,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 159
 
     track PfalTFs_AP2L_Zhang_10hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2LZhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-L (Zhang) 10hpi Pks
@@ -1277,7 +1294,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 160
 
     track PfalTFs_AP2L_Zhang_25hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2LZhang timepoint=t25
     type bigWig
     shortLabel AP2-L (Zhang) 25hpi Sig
@@ -1289,7 +1306,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 161
 
     track PfalTFs_AP2L_Zhang_25hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2LZhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-L (Zhang) 25hpi Pks
@@ -1299,7 +1316,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 162
 
     track PfalTFs_AP2L_Zhang_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2LZhang timepoint=t40
     type bigWig
     shortLabel AP2-L (Zhang) 40hpi Sig
@@ -1311,7 +1328,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 163
 
     track PfalTFs_AP2L_Zhang_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2LZhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-L (Zhang) 40hpi Pks
@@ -1321,7 +1338,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 164
 
     track PfalTFs_AP2LT_Zhang_10hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2LTZhang timepoint=t10
     type bigWig
     shortLabel AP2-LT (Zhang) 10hpi Sig
@@ -1333,7 +1350,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 165
 
     track PfalTFs_AP2LT_Zhang_10hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2LTZhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-LT (Zhang) 10hpi Pks
@@ -1343,7 +1360,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 166
 
     track PfalTFs_AP2LT_Zhang_25hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2LTZhang timepoint=t25
     type bigWig
     shortLabel AP2-LT (Zhang) 25hpi Sig
@@ -1355,7 +1372,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 167
 
     track PfalTFs_AP2LT_Zhang_25hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2LTZhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-LT (Zhang) 25hpi Pks
@@ -1365,7 +1382,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 168
 
     track PfalTFs_AP2LT_Llinas_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2LTLlina timepoint=t40
     type bigWig
     shortLabel AP2-LT (Llinas) 40hpi Sig
@@ -1377,7 +1394,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 169
 
     track PfalTFs_AP2LT_Llinas_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2LTLlina timepoint=t40
     type bigBed 6 +
     shortLabel AP2-LT (Llinas) 40hpi Pks
@@ -1387,7 +1404,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 170
 
     track PfalTFs_AP2LT_Zhang_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2LTZhang timepoint=t40
     type bigWig
     shortLabel AP2-LT (Zhang) 40hpi Sig
@@ -1399,7 +1416,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 171
 
     track PfalTFs_AP2LT_Zhang_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2LTZhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-LT (Zhang) 40hpi Pks
@@ -1409,7 +1426,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 172
 
     track PfalTFs_AP2O2_Zhang_25hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2O2Zhang timepoint=t25
     type bigWig
     shortLabel AP2-O2 (Zhang) 25hpi Sig
@@ -1421,7 +1438,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 173
 
     track PfalTFs_AP2O2_Zhang_25hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2O2Zhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-O2 (Zhang) 25hpi Pks
@@ -1431,7 +1448,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 174
 
     track PfalTFs_AP2O2_Zhang_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2O2Zhang timepoint=t40
     type bigWig
     shortLabel AP2-O2 (Zhang) 40hpi Sig
@@ -1443,7 +1460,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 175
 
     track PfalTFs_AP2O2_Zhang_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2O2Zhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-O2 (Zhang) 40hpi Pks
@@ -1453,7 +1470,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 176
 
     track PfalTFs_AP2O5_Zhang_10hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2O5Zhang timepoint=t10
     type bigWig
     shortLabel AP2-O5 (Zhang) 10hpi Sig
@@ -1465,7 +1482,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 177
 
     track PfalTFs_AP2O5_Zhang_10hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2O5Zhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-O5 (Zhang) 10hpi Pks
@@ -1475,7 +1492,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 178
 
     track PfalTFs_AP2O5_Zhang_25hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2O5Zhang timepoint=t25
     type bigWig
     shortLabel AP2-O5 (Zhang) 25hpi Sig
@@ -1487,7 +1504,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 179
 
     track PfalTFs_AP2O5_Zhang_25hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2O5Zhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-O5 (Zhang) 25hpi Pks
@@ -1497,7 +1514,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 180
 
     track PfalTFs_AP2O5_Zhang_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2O5Zhang timepoint=t40
     type bigWig
     shortLabel AP2-O5 (Zhang) 40hpi Sig
@@ -1509,7 +1526,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 181
 
     track PfalTFs_AP2O5_Zhang_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2O5Zhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-O5 (Zhang) 40hpi Pks
@@ -1519,7 +1536,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 182
 
     track PfalTFs_AP2P_Zhang_10hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2PZhang timepoint=t10
     type bigWig
     shortLabel AP2-P (Zhang) 10hpi Sig
@@ -1531,7 +1548,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 183
 
     track PfalTFs_AP2P_Zhang_10hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2PZhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-P (Zhang) 10hpi Pks
@@ -1541,7 +1558,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 184
 
     track PfalTFs_AP2P_LeRoch_16hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2PLeRoc timepoint=t16
     type bigWig
     shortLabel AP2-P (LeRoch) 16hpi Sig
@@ -1553,7 +1570,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 185
 
     track PfalTFs_AP2P_LeRoch_16hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2PLeRoc timepoint=t16
     type bigBed 6 +
     shortLabel AP2-P (LeRoch) 16hpi Pks
@@ -1563,7 +1580,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 186
 
     track PfalTFs_AP2P_Zhang_25hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2PZhang timepoint=t25
     type bigWig
     shortLabel AP2-P (Zhang) 25hpi Sig
@@ -1575,7 +1592,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 187
 
     track PfalTFs_AP2P_Zhang_25hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2PZhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-P (Zhang) 25hpi Pks
@@ -1585,7 +1602,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 188
 
     track PfalTFs_AP2P_LeRoch_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2PLeRoc timepoint=t40
     type bigWig
     shortLabel AP2-P (LeRoch) 40hpi Sig
@@ -1597,7 +1614,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 189
 
     track PfalTFs_AP2P_LeRoch_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2PLeRoc timepoint=t40
     type bigBed 6 +
     shortLabel AP2-P (LeRoch) 40hpi Pks
@@ -1607,7 +1624,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 190
 
     track PfalTFs_AP2P_Zhang_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsAP2PZhang timepoint=t40
     type bigWig
     shortLabel AP2-P (Zhang) 40hpi Sig
@@ -1619,7 +1636,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 191
 
     track PfalTFs_AP2P_Zhang_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsAP2PZhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-P (Zhang) 40hpi Pks
@@ -1629,7 +1646,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 192
 
     track PfalTFs_PF3D7_0613800_Zhang_10hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsPF3D706138Zhang timepoint=t10
     type bigWig
     shortLabel PF3D7_0613800 (Zhang) 10hpi Sig
@@ -1641,7 +1658,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 193
 
     track PfalTFs_PF3D7_0613800_Zhang_10hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsPF3D706138Zhang timepoint=t10
     type bigBed 6 +
     shortLabel PF3D7_0613800 (Zhang) 10hpi Pks
@@ -1651,7 +1668,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 194
 
     track PfalTFs_PF3D7_0613800_Zhang_25hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsPF3D706138Zhang timepoint=t25
     type bigWig
     shortLabel PF3D7_0613800 (Zhang) 25hpi Sig
@@ -1663,7 +1680,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 195
 
     track PfalTFs_PF3D7_0613800_Zhang_25hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsPF3D706138Zhang timepoint=t25
     type bigBed 6 +
     shortLabel PF3D7_0613800 (Zhang) 25hpi Pks
@@ -1673,7 +1690,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 196
 
     track PfalTFs_PF3D7_0613800_Zhang_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsPF3D706138Zhang timepoint=t40
     type bigWig
     shortLabel PF3D7_0613800 (Zhang) 40hpi Sig
@@ -1685,7 +1702,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 197
 
     track PfalTFs_PF3D7_0613800_Zhang_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsPF3D706138Zhang timepoint=t40
     type bigBed 6 +
     shortLabel PF3D7_0613800 (Zhang) 40hpi Pks
@@ -1695,7 +1712,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 198
 
     track PfalTFs_PF3D7_1115500_Zhang_10hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsPF3D711155Zhang timepoint=t10
     type bigWig
     shortLabel PF3D7_1115500 (Zhang) 10hpi Sig
@@ -1707,7 +1724,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 199
 
     track PfalTFs_PF3D7_1115500_Zhang_10hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsPF3D711155Zhang timepoint=t10
     type bigBed 6 +
     shortLabel PF3D7_1115500 (Zhang) 10hpi Pks
@@ -1717,7 +1734,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 200
 
     track PfalTFs_PF3D7_1115500_Zhang_25hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsPF3D711155Zhang timepoint=t25
     type bigWig
     shortLabel PF3D7_1115500 (Zhang) 25hpi Sig
@@ -1729,7 +1746,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 201
 
     track PfalTFs_PF3D7_1115500_Zhang_25hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsPF3D711155Zhang timepoint=t25
     type bigBed 6 +
     shortLabel PF3D7_1115500 (Zhang) 25hpi Pks
@@ -1739,7 +1756,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 202
 
     track PfalTFs_PF3D7_1115500_Zhang_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsPF3D711155Zhang timepoint=t40
     type bigWig
     shortLabel PF3D7_1115500 (Zhang) 40hpi Sig
@@ -1751,7 +1768,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 203
 
     track PfalTFs_PF3D7_1115500_Zhang_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsPF3D711155Zhang timepoint=t40
     type bigBed 6 +
     shortLabel PF3D7_1115500 (Zhang) 40hpi Pks
@@ -1761,7 +1778,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 204
 
     track PfalTFs_PF3D7_1239200_Zhang_10hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsPF3D712392Zhang timepoint=t10
     type bigWig
     shortLabel PF3D7_1239200 (Zhang) 10hpi Sig
@@ -1773,7 +1790,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 205
 
     track PfalTFs_PF3D7_1239200_Zhang_10hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsPF3D712392Zhang timepoint=t10
     type bigBed 6 +
     shortLabel PF3D7_1239200 (Zhang) 10hpi Pks
@@ -1783,7 +1800,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 206
 
     track PfalTFs_PF3D7_1239200_Zhang_25hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsPF3D712392Zhang timepoint=t25
     type bigWig
     shortLabel PF3D7_1239200 (Zhang) 25hpi Sig
@@ -1795,7 +1812,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 207
 
     track PfalTFs_PF3D7_1239200_Zhang_25hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsPF3D712392Zhang timepoint=t25
     type bigBed 6 +
     shortLabel PF3D7_1239200 (Zhang) 25hpi Pks
@@ -1805,7 +1822,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 208
 
     track PfalTFs_PF3D7_1239200_Zhang_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsPF3D712392Zhang timepoint=t40
     type bigWig
     shortLabel PF3D7_1239200 (Zhang) 40hpi Sig
@@ -1817,7 +1834,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 209
 
     track PfalTFs_PF3D7_1239200_Zhang_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsPF3D712392Zhang timepoint=t40
     type bigBed 6 +
     shortLabel PF3D7_1239200 (Zhang) 40hpi Pks
@@ -1827,7 +1844,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 210
 
     track PfalTFs_SIP2_Voss_40hpi_sig
-    parent PfalTFs off
+    parent PfalTFs_Signal off
     subGroups view=sig factorSource=fsSIP2Voss timepoint=t40
     type bigWig
     shortLabel SIP2 (Voss) 40hpi Sig
@@ -1839,7 +1856,7 @@ sortOrder timepoint=+ factorSource=+ view=+
     priority 211
 
     track PfalTFs_SIP2_Voss_40hpi_pk
-    parent PfalTFs off
+    parent PfalTFs_Peaks off
     subGroups view=pk factorSource=fsSIP2Voss timepoint=t40
     type bigBed 6 +
     shortLabel SIP2 (Voss) 40hpi Pks
