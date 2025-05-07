@@ -22,13 +22,14 @@ def create_chrom_state_trackdb(file_list_path, base_url, parent_track_id):
     # Note: 'type bigBed' is specified here as requested, though sometimes omitted for composites.
     # Subtrack types define the actual data format.
     print(f"type bigBed")
+    print(f"priority 1")
     print(f"visibility dense") # Parent container visibility
     # Add other parent track settings if needed (e.g., group, html)
     print("")
 
     # --- Process Subtracks ---
     try:
-        priority_counter = 1 # Start priority for subtracks
+        priority_counter = 2 # Start priority for subtracks
 
         with open(file_list_path, 'r') as f_list:
             for line in f_list:
@@ -155,11 +156,11 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
     print(f"type bigWig")
     print(f"visibility full")
     print(f"autoScale off")
-    print(f"groupAutoScale on")
-    print(f"group regulation")
+    #print(f"groupAutoScale on")
+    #print(f"group regulation")
     print(f"priority 20")
     print(f"dragAndDrop subTracks") # Enable drag-and-drop rearrangement
-    print(f"noInherit on") # Subtrack settings (color, visibility) are specific
+    #print(f"noInherit on") # Subtrack settings (color, visibility) are specific
 
     # SubGroup Definitions
     sg1_items = " ".join([f"{tag}={val}" for val, tag in timepoint_tags.items()])

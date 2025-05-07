@@ -4,6 +4,7 @@ compositeTrack on
 shortLabel IDC Chromatin States
 longLabel P. falciparum chromatin states during the IDC
 type bigBed
+priority 1
 visibility dense
 
 track PfalChromStates_10hpi
@@ -14,7 +15,7 @@ longLabel Chromatin States for 10hpi
 visibility dense
 itemRgb on
 bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/10hpi_chrom-states.bb
-priority 1
+priority 2
 
 track PfalChromStates_30hpi
 parent PfalChromStates on
@@ -24,7 +25,7 @@ longLabel Chromatin States for 30hpi
 visibility dense
 itemRgb on
 bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/30hpi_chrom-states.bb
-priority 2
+priority 3
 
 track PfalChromStates_40hpi
 parent PfalChromStates on
@@ -34,7 +35,7 @@ longLabel Chromatin States for 40hpi
 visibility dense
 itemRgb on
 bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/40hpi_chrom-states.bb
-priority 3
+priority 4
 
 # --- Histone Mark / Signal Tracks (with Subgroups) ---
 track PfalHistoneMarks
@@ -44,11 +45,8 @@ longLabel P. falciparum Histone Marks and Accessibility
 type bigWig
 visibility full
 autoScale off
-groupAutoScale on
-group regulation
 priority 20
 dragAndDrop subTracks
-noInherit on
 subGroup1 timepoint Timepoint t05=05hpi t10=10hpi t15=15hpi t20=20hpi t25=25hpi t30=30hpi t35=35hpi t40=40hpi
 subGroup2 markSource Mark_Source msATACBartfai=ATAC_Bartfai msH2AZDuffy=H2A.Z_Duffy msH2AZStunnenberg=H2A.Z_Stunnenberg msH3K18acDuffy=H3K18ac_Duffy msH3K27acDuffy=H3K27ac_Duffy msH3K4me1Duffy=H3K4me1_Duffy msH3K4me3Stunnenberg=H3K4me3_Stunnenberg msH3K9acStunnenberg=H3K9ac_Stunnenberg msH3K9me3Miller=H3K9me3_Miller msHP1Voss=HP1_Voss msHP1Zhang=HP1_Zhang msINPUTBartfai=INPUT_Bartfai msINPUTDuffy=INPUT_Duffy msINPUTStunnenberg=INPUT_Stunnenberg msINPUTVoss=INPUT_Voss msINPUTZhang=INPUT_Zhang
 dimensions dimX=timepoint dimY=markSource
