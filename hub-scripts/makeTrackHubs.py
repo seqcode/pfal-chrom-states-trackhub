@@ -187,7 +187,7 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
         ms_tag = mark_source_tags[mark_source_key]
 
         # Define visibility and color (same logic as before)
-        selected=""
+        selected="off"
         color = "128,128,128"
         if mark.upper() == "INPUT":
             color = "150,150,150"

@@ -141,7 +141,7 @@ sortOrder timepoint=+ markSource=+
     priority 28
 
     track PfalHistoneMarks_H2AzZ_10hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t10 markSource=msH2AZDuffy
     type bigWig
     shortLabel H2A.Z 10hpi (Duffy)
@@ -152,7 +152,7 @@ sortOrder timepoint=+ markSource=+
     priority 29
 
     track PfalHistoneMarks_H2AzZ_10hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t10 markSource=msH2AZStunnenberg
     type bigWig
     shortLabel H2A.Z 10hpi (Stunnenberg)
@@ -163,7 +163,7 @@ sortOrder timepoint=+ markSource=+
     priority 30
 
     track PfalHistoneMarks_H2AzZ_20hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t20 markSource=msH2AZStunnenberg
     type bigWig
     shortLabel H2A.Z 20hpi (Stunnenberg)
@@ -174,7 +174,7 @@ sortOrder timepoint=+ markSource=+
     priority 31
 
     track PfalHistoneMarks_H2AzZ_30hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t30 markSource=msH2AZDuffy
     type bigWig
     shortLabel H2A.Z 30hpi (Duffy)
@@ -185,7 +185,7 @@ sortOrder timepoint=+ markSource=+
     priority 32
 
     track PfalHistoneMarks_H2AzZ_30hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t30 markSource=msH2AZStunnenberg
     type bigWig
     shortLabel H2A.Z 30hpi (Stunnenberg)
@@ -196,7 +196,7 @@ sortOrder timepoint=+ markSource=+
     priority 33
 
     track PfalHistoneMarks_H2AzZ_40hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t40 markSource=msH2AZDuffy
     type bigWig
     shortLabel H2A.Z 40hpi (Duffy)
@@ -207,7 +207,7 @@ sortOrder timepoint=+ markSource=+
     priority 34
 
     track PfalHistoneMarks_H2AzZ_40hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t40 markSource=msH2AZStunnenberg
     type bigWig
     shortLabel H2A.Z 40hpi (Stunnenberg)
@@ -218,7 +218,7 @@ sortOrder timepoint=+ markSource=+
     priority 35
 
     track PfalHistoneMarks_H3K18ac_10hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t10 markSource=msH3K18acDuffy
     type bigWig
     shortLabel H3K18ac 10hpi (Duffy)
@@ -229,7 +229,7 @@ sortOrder timepoint=+ markSource=+
     priority 36
 
     track PfalHistoneMarks_H3K18ac_30hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t30 markSource=msH3K18acDuffy
     type bigWig
     shortLabel H3K18ac 30hpi (Duffy)
@@ -240,7 +240,7 @@ sortOrder timepoint=+ markSource=+
     priority 37
 
     track PfalHistoneMarks_H3K18ac_40hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t40 markSource=msH3K18acDuffy
     type bigWig
     shortLabel H3K18ac 40hpi (Duffy)
@@ -251,7 +251,7 @@ sortOrder timepoint=+ markSource=+
     priority 38
 
     track PfalHistoneMarks_H3K27ac_10hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t10 markSource=msH3K27acDuffy
     type bigWig
     shortLabel H3K27ac 10hpi (Duffy)
@@ -262,7 +262,7 @@ sortOrder timepoint=+ markSource=+
     priority 39
 
     track PfalHistoneMarks_H3K27ac_30hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t30 markSource=msH3K27acDuffy
     type bigWig
     shortLabel H3K27ac 30hpi (Duffy)
@@ -273,7 +273,7 @@ sortOrder timepoint=+ markSource=+
     priority 40
 
     track PfalHistoneMarks_H3K27ac_40hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t40 markSource=msH3K27acDuffy
     type bigWig
     shortLabel H3K27ac 40hpi (Duffy)
@@ -284,7 +284,7 @@ sortOrder timepoint=+ markSource=+
     priority 41
 
     track PfalHistoneMarks_H3K4me1_10hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t10 markSource=msH3K4me1Duffy
     type bigWig
     shortLabel H3K4me1 10hpi (Duffy)
@@ -295,7 +295,7 @@ sortOrder timepoint=+ markSource=+
     priority 42
 
     track PfalHistoneMarks_H3K4me1_30hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t30 markSource=msH3K4me1Duffy
     type bigWig
     shortLabel H3K4me1 30hpi (Duffy)
@@ -306,7 +306,7 @@ sortOrder timepoint=+ markSource=+
     priority 43
 
     track PfalHistoneMarks_H3K4me1_40hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t40 markSource=msH3K4me1Duffy
     type bigWig
     shortLabel H3K4me1 40hpi (Duffy)
@@ -317,7 +317,7 @@ sortOrder timepoint=+ markSource=+
     priority 44
 
     track PfalHistoneMarks_H3K4me3_10hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t10 markSource=msH3K4me3Stunnenberg
     type bigWig
     shortLabel H3K4me3 10hpi (Stunnenberg)
@@ -328,7 +328,7 @@ sortOrder timepoint=+ markSource=+
     priority 45
 
     track PfalHistoneMarks_H3K4me3_20hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t20 markSource=msH3K4me3Stunnenberg
     type bigWig
     shortLabel H3K4me3 20hpi (Stunnenberg)
@@ -339,7 +339,7 @@ sortOrder timepoint=+ markSource=+
     priority 46
 
     track PfalHistoneMarks_H3K4me3_30hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t30 markSource=msH3K4me3Stunnenberg
     type bigWig
     shortLabel H3K4me3 30hpi (Stunnenberg)
@@ -350,7 +350,7 @@ sortOrder timepoint=+ markSource=+
     priority 47
 
     track PfalHistoneMarks_H3K4me3_40hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t40 markSource=msH3K4me3Stunnenberg
     type bigWig
     shortLabel H3K4me3 40hpi (Stunnenberg)
@@ -361,7 +361,7 @@ sortOrder timepoint=+ markSource=+
     priority 48
 
     track PfalHistoneMarks_H3K9ac_10hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t10 markSource=msH3K9acStunnenberg
     type bigWig
     shortLabel H3K9ac 10hpi (Stunnenberg)
@@ -372,7 +372,7 @@ sortOrder timepoint=+ markSource=+
     priority 49
 
     track PfalHistoneMarks_H3K9ac_20hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t20 markSource=msH3K9acStunnenberg
     type bigWig
     shortLabel H3K9ac 20hpi (Stunnenberg)
@@ -383,7 +383,7 @@ sortOrder timepoint=+ markSource=+
     priority 50
 
     track PfalHistoneMarks_H3K9ac_30hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t30 markSource=msH3K9acStunnenberg
     type bigWig
     shortLabel H3K9ac 30hpi (Stunnenberg)
@@ -394,7 +394,7 @@ sortOrder timepoint=+ markSource=+
     priority 51
 
     track PfalHistoneMarks_H3K9ac_40hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t40 markSource=msH3K9acStunnenberg
     type bigWig
     shortLabel H3K9ac 40hpi (Stunnenberg)
@@ -405,7 +405,7 @@ sortOrder timepoint=+ markSource=+
     priority 52
 
     track PfalHistoneMarks_H3K9me3_20hpi_Miller
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t20 markSource=msH3K9me3Miller
     type bigWig
     shortLabel H3K9me3 20hpi (Miller)
@@ -416,7 +416,7 @@ sortOrder timepoint=+ markSource=+
     priority 53
 
     track PfalHistoneMarks_H3K9me3_40hpi_Miller
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t40 markSource=msH3K9me3Miller
     type bigWig
     shortLabel H3K9me3 40hpi (Miller)
@@ -427,7 +427,7 @@ sortOrder timepoint=+ markSource=+
     priority 54
 
     track PfalHistoneMarks_HP1_10hpi_Zhang
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t10 markSource=msHP1Zhang
     type bigWig
     shortLabel HP1 10hpi (Zhang)
@@ -438,7 +438,7 @@ sortOrder timepoint=+ markSource=+
     priority 55
 
     track PfalHistoneMarks_HP1_30hpi_Zhang
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t30 markSource=msHP1Zhang
     type bigWig
     shortLabel HP1 30hpi (Zhang)
@@ -449,7 +449,7 @@ sortOrder timepoint=+ markSource=+
     priority 56
 
     track PfalHistoneMarks_HP1_40hpi_Voss
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t40 markSource=msHP1Voss
     type bigWig
     shortLabel HP1 40hpi (Voss)
@@ -460,7 +460,7 @@ sortOrder timepoint=+ markSource=+
     priority 57
 
     track PfalHistoneMarks_HP1_40hpi_Zhang
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t40 markSource=msHP1Zhang
     type bigWig
     shortLabel HP1 40hpi (Zhang)
@@ -471,7 +471,7 @@ sortOrder timepoint=+ markSource=+
     priority 58
 
     track PfalHistoneMarks_INPUT_10hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t10 markSource=msINPUTDuffy
     type bigWig
     shortLabel INPUT 10hpi (Duffy)
@@ -482,7 +482,7 @@ sortOrder timepoint=+ markSource=+
     priority 59
 
     track PfalHistoneMarks_INPUT_10hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t10 markSource=msINPUTStunnenberg
     type bigWig
     shortLabel INPUT 10hpi (Stunnenberg)
@@ -493,7 +493,7 @@ sortOrder timepoint=+ markSource=+
     priority 60
 
     track PfalHistoneMarks_INPUT_10hpi_Zhang
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t10 markSource=msINPUTZhang
     type bigWig
     shortLabel INPUT 10hpi (Zhang)
@@ -504,7 +504,7 @@ sortOrder timepoint=+ markSource=+
     priority 61
 
     track PfalHistoneMarks_INPUT_20hpi_Bartfai
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t20 markSource=msINPUTBartfai
     type bigWig
     shortLabel INPUT 20hpi (Bartfai)
@@ -515,7 +515,7 @@ sortOrder timepoint=+ markSource=+
     priority 62
 
     track PfalHistoneMarks_INPUT_20hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t20 markSource=msINPUTStunnenberg
     type bigWig
     shortLabel INPUT 20hpi (Stunnenberg)
@@ -526,7 +526,7 @@ sortOrder timepoint=+ markSource=+
     priority 63
 
     track PfalHistoneMarks_INPUT_30hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t30 markSource=msINPUTDuffy
     type bigWig
     shortLabel INPUT 30hpi (Duffy)
@@ -537,7 +537,7 @@ sortOrder timepoint=+ markSource=+
     priority 64
 
     track PfalHistoneMarks_INPUT_30hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t30 markSource=msINPUTStunnenberg
     type bigWig
     shortLabel INPUT 30hpi (Stunnenberg)
@@ -548,7 +548,7 @@ sortOrder timepoint=+ markSource=+
     priority 65
 
     track PfalHistoneMarks_INPUT_30hpi_Zhang
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t30 markSource=msINPUTZhang
     type bigWig
     shortLabel INPUT 30hpi (Zhang)
@@ -559,7 +559,7 @@ sortOrder timepoint=+ markSource=+
     priority 66
 
     track PfalHistoneMarks_INPUT_40hpi_Duffy
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t40 markSource=msINPUTDuffy
     type bigWig
     shortLabel INPUT 40hpi (Duffy)
@@ -570,7 +570,7 @@ sortOrder timepoint=+ markSource=+
     priority 67
 
     track PfalHistoneMarks_INPUT_40hpi_Stunnenberg
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t40 markSource=msINPUTStunnenberg
     type bigWig
     shortLabel INPUT 40hpi (Stunnenberg)
@@ -581,7 +581,7 @@ sortOrder timepoint=+ markSource=+
     priority 68
 
     track PfalHistoneMarks_INPUT_40hpi_Voss
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t40 markSource=msINPUTVoss
     type bigWig
     shortLabel INPUT 40hpi (Voss)
@@ -592,7 +592,7 @@ sortOrder timepoint=+ markSource=+
     priority 69
 
     track PfalHistoneMarks_INPUT_40hpi_Zhang
-    parent PfalHistoneMarks 
+    parent PfalHistoneMarks off
     subGroups timepoint=t40 markSource=msINPUTZhang
     type bigWig
     shortLabel INPUT 40hpi (Zhang)
