@@ -155,7 +155,7 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
     print(f"type bigWig")
     print(f"autoScale off")
     print(f"groupAutoScale on")
-    print(f"maxHeightPixels 100:32:8")
+    #print(f"maxHeightPixels 100:32:8")
     print(f"group regulation")
     print(f"priority 20")
     print(f"dragAndDrop subTracks") # Enable drag-and-drop rearrangement

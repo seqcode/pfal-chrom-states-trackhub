@@ -44,7 +44,6 @@ longLabel P. falciparum Histone Marks and Accessibility
 type bigWig
 autoScale off
 groupAutoScale on
-maxHeightPixels 100:32:8
 group regulation
 priority 20
 dragAndDrop subTracks
