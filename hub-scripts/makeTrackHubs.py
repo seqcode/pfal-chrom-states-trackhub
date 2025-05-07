@@ -156,12 +156,9 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
     print(f"type bigWig")
     print(f"visibility full")
     print(f"autoScale off")
-    #print(f"groupAutoScale on")
-    #print(f"group regulation")
     print(f"priority 20")
     print(f"dragAndDrop subTracks") # Enable drag-and-drop rearrangement
-    #print(f"noInherit on") # Subtrack settings (color, visibility) are specific
-
+    
     # SubGroup Definitions
     sg1_items = " ".join([f"{tag}={val}" for val, tag in timepoint_tags.items()])
     print(f"subGroup1 timepoint Timepoint {sg1_items}")
@@ -190,12 +187,12 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
         ms_tag = mark_source_tags[mark_source_key]
 
         # Define visibility and color (same logic as before)
-        visibility = "hide"
+        selected=""
         color = "128,128,128"
         if mark.upper() == "INPUT":
             color = "150,150,150"
         elif "ATAC" in mark.upper():
-            visibility = "full"
+            selected = "on"
             color = "153,50,204"
         elif "H3K4me3" in mark or "H3K9ac" in mark or "H3K27ac" in mark or "H3K18ac" in mark:
              color = "0,128,0"
@@ -216,13 +213,12 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
 
         # Print Subtrack Entry
         print(f"    track {track_line_id}")
-        print(f"    parent {parent_track_id} on")
+        print(f"    parent {parent_track_id} {selected}")
         # Add the subGroups line
         print(f"    subGroups timepoint={tp_tag} markSource={ms_tag}")
         print(f"    type bigWig")
         print(f"    shortLabel {short_label}") # Label shown in menus/tooltips
         print(f"    longLabel {long_label}")
-        print(f"    visibility {visibility}")
         print(f"    color {color}")
         print(f"    autoScale off")
         print(f"    bigDataUrl {big_data_url}")
