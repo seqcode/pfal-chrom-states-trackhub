@@ -17,12 +17,12 @@ def create_chrom_state_trackdb(file_list_path, base_url, parent_track_id):
     # --- Print Parent Track Definition ---
     print(f"track {parent_track_id}")
     print(f"compositeTrack on")
-    print(f"shortLabel Chromatin States")
-    print(f"longLabel P. falciparum chromatin states")
+    print(f"shortLabel IDC Chromatin States")
+    print(f"longLabel P. falciparum chromatin states during the IDC")
     # Note: 'type bigBed' is specified here as requested, though sometimes omitted for composites.
     # Subtrack types define the actual data format.
     print(f"type bigBed")
-    print(f"visibility full") # Parent container visibility
+    print(f"visibility dense") # Parent container visibility
     # Add other parent track settings if needed (e.g., group, html)
     print("")
 
@@ -74,7 +74,7 @@ def create_chrom_state_trackdb(file_list_path, base_url, parent_track_id):
     except Exception as e:
         print(f"# An error occurred: {e}")
 
-        
+
 
 # --- Function for Histone Mark / Signal Tracks (bigWig) ---
 def create_signal_trackdb(file_list_path, base_url, parent_track_id):
@@ -153,7 +153,6 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
     print(f"shortLabel Histone Marks")
     print(f"longLabel P. falciparum Histone Marks and Accessibility")
     print(f"type bigWig")
-    print(f"visibility dense")
     print(f"autoScale off")
     print(f"groupAutoScale on")
     print(f"maxHeightPixels 100:32:8")
@@ -190,12 +189,12 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
         ms_tag = mark_source_tags[mark_source_key]
 
         # Define visibility and color (same logic as before)
-        visibility = "full"
+        visibility = "hide"
         color = "128,128,128"
         if mark.upper() == "INPUT":
-            visibility = "hide"
             color = "150,150,150"
         elif "ATAC" in mark.upper():
+            visibility = "full"
             color = "153,50,204"
         elif "H3K4me3" in mark or "H3K9ac" in mark or "H3K27ac" in mark or "H3K18ac" in mark:
              color = "0,128,0"
@@ -445,7 +444,7 @@ if __name__ == "__main__":
     create_chrom_state_trackdb(args.chrom_state_list, BASE_URL, CHROM_STATE_PARENT_ID)
 
     # Call function for Histone Marks / Signal Tracks
-    #create_signal_trackdb(args.signal_list, BASE_URL, HISTONE_PARENT_ID)
+    create_signal_trackdb(args.signal_list, BASE_URL, HISTONE_PARENT_ID)
 
     # Call function for TFs / Signal Tracks & Peaks
     #create_tf_trackdb(args.tf_list, BASE_URL, TF_PARENT_ID)
