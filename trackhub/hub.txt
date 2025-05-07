@@ -1,0 +1,5 @@
+hub plasmodium_chrom_states
+shortLabel Mahony lab P.falciparum chromatin states
+longLabel Data associated with Mahony lab P.falciparum chromatin states project
+genomesFile genomes.txt
+email mahony@psu.edu
