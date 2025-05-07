@@ -74,6 +74,8 @@ def create_chrom_state_trackdb(file_list_path, base_url, parent_track_id):
     except Exception as e:
         print(f"# An error occurred: {e}")
 
+        
+
 # --- Function for Histone Mark / Signal Tracks (bigWig) ---
 def create_signal_trackdb(file_list_path, base_url, parent_track_id):
     """
@@ -156,7 +158,7 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
     print(f"groupAutoScale on")
     print(f"maxHeightPixels 100:32:8")
     print(f"group regulation")
-    print(f"priority 20.0")
+    print(f"priority 20")
     print(f"dragAndDrop subTracks") # Enable drag-and-drop rearrangement
     print(f"noInherit on") # Subtrack settings (color, visibility) are specific
 
@@ -225,7 +227,7 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
         print(f"    autoScale off")
         print(f"    viewLimits auto")
         print(f"    bigDataUrl {big_data_url}")
-        print(f"    priority {priority_counter:.1f}")
+        print(f"    priority {priority_counter}")
         print("")
         priority_counter += 1
 
@@ -337,7 +339,7 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
     print(f"longLabel P. falciparum Transcription Factor ChIP-seq")
     print(f"visibility dense")
     print(f"group regulation")
-    print(f"priority 30.0")
+    print(f"priority 30")
     print(f"dragAndDrop subTracks")
     print(f"noInherit on")
 
@@ -405,7 +407,7 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
             # print(f"    itemRgb on") # Uncomment if bigBed files have per-item RGB
 
         print(f"    bigDataUrl {big_data_url}")
-        print(f"    priority {priority_counter:.1f}")
+        print(f"    priority {priority_counter:}")
         print("")
         priority_counter += 1
 
@@ -443,8 +445,8 @@ if __name__ == "__main__":
     create_chrom_state_trackdb(args.chrom_state_list, BASE_URL, CHROM_STATE_PARENT_ID)
 
     # Call function for Histone Marks / Signal Tracks
-    create_signal_trackdb(args.signal_list, BASE_URL, HISTONE_PARENT_ID)
+    #create_signal_trackdb(args.signal_list, BASE_URL, HISTONE_PARENT_ID)
 
     # Call function for TFs / Signal Tracks & Peaks
-    create_tf_trackdb(args.tf_list, BASE_URL, TF_PARENT_ID)
+    #create_tf_trackdb(args.tf_list, BASE_URL, TF_PARENT_ID)
 

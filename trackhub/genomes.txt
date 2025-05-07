@@ -1,2 +1,2 @@
-genome hub_6497947_GCF_000002765.5
-trackDb hub_6497947_GCF_000002765.5/trackDb.txt
+genome GCF_000002765.5
+trackDb GCF_000002765.5/trackDb.txt
