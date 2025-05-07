@@ -245,7 +245,7 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
     factor_sources = set()
     timepoints = set()
     # View types are predefined
-    view_map = {"Signal": "sig", "Peaks": "pk"} # Short tags for view
+    view_map = {"Signal": "SIG", "Peaks": "PKS"} # Short tags for view
 
     # --- First Pass: Read files, parse info, collect unique subgroup values ---
     try:
@@ -337,7 +337,7 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
     print(f"dragAndDrop subTracks")
 
     # SubGroup Definitions
-    print(f"subGroup1 view Views Signal={view_map['Signal']} Peaks={view_map['Peaks']}")
+    print(f"subGroup1 view Views SIG=Signal PKS=Peaks")
     sg2_items = " ".join([f"{tag}={val}" for val, tag in timepoint_tags.items()])
     print(f"subGroup2 timepoint Timepoint {sg2_items}")
     # For subGroup3, display value is "TF_Source"
@@ -355,7 +355,7 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
     print(f"track {parent_track_id}_Signal")
     print(f"parent {parent_track_id}")
     print(f"shortLabel Signal")
-    print(f"view sig")
+    print(f"view SIG")
     print(f"visibility full")
     print(f"type bigWig")
     print(f"viewUi on")
@@ -365,7 +365,7 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
     print(f"track {parent_track_id}_Peaks")
     print(f"parent {parent_track_id}")
     print(f"shortLabel Peaks")
-    print(f"view pk")
+    print(f"view PKS")
     print(f"visibility dense")
     print(f"type bigBed 6 +")
     print(f"viewUi on")

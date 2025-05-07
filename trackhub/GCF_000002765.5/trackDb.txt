@@ -610,7 +610,7 @@ longLabel P. falciparum IDC Transcription Factor ChIP-seq
 visibility full
 priority 100
 dragAndDrop subTracks
-subGroup1 view Views Signal=sig Peaks=pk
+subGroup1 view Views SIG=Signal PKS=Peaks
 subGroup2 timepoint Timepoint t05=05hpi t10=10hpi t16=16hpi t25=25hpi t30=30hpi t40=40hpi
 subGroup3 factorSource Factor_Source fsAP2EXPLlina=AP2-EXP_Llinas fsAP2EXPZhang=AP2-EXP_Zhang fsAP2EXP2Zhang=AP2-EXP2_Zhang fsAP2GLlina=AP2-G_Llinas fsAP2GZhang=AP2-G_Zhang fsAP2G2Llina=AP2-G2_Llinas fsAP2G2Zhang=AP2-G2_Zhang fsAP2G3Zhang=AP2-G3_Zhang fsAP2G4Zhang=AP2-G4_Zhang fsAP2G5Zhang=AP2-G5_Zhang fsAP2HCVoss=AP2-HC_Voss fsAP2HCZhang=AP2-HC_Zhang fsAP2HSCorte=AP2-HS_Cortes fsAP2HSZhang=AP2-HS_Zhang fsAP2ILlina=AP2-I_Llinas fsAP2LZhang=AP2-L_Zhang fsAP2LTLlina=AP2-LT_Llinas fsAP2LTZhang=AP2-LT_Zhang fsAP2O2Zhang=AP2-O2_Zhang fsAP2O5Zhang=AP2-O5_Zhang fsAP2PLeRoc=AP2-P_LeRoch fsAP2PZhang=AP2-P_Zhang fsPF3D706138Zhang=PF3D7_0613800_Zhang fsPF3D711155Zhang=PF3D7_1115500_Zhang fsPF3D712392Zhang=PF3D7_1239200_Zhang fsSIP2Voss=SIP2_Voss
 dimensions dimX=factorSource dimY=timepoint dimA=view
@@ -620,7 +620,7 @@ type bed 3
 track PfalTFs_Signal
 parent PfalTFs
 shortLabel Signal
-view sig
+view SIG
 visibility full
 type bigWig
 viewUi on
@@ -628,14 +628,14 @@ viewUi on
 track PfalTFs_Peaks
 parent PfalTFs
 shortLabel Peaks
-view pk
+view PKS
 visibility dense
 type bigBed 6 +
 viewUi on
 
-    track PfalTFs_AP2EXP_Zhang_10hpi_sig
+    track PfalTFs_AP2EXP_Zhang_10hpi_SIG
     parent PfalTFs_Signal on
-    subGroups view=sig factorSource=fsAP2EXPZhang timepoint=t10
+    subGroups view=SIG factorSource=fsAP2EXPZhang timepoint=t10
     type bigWig
     shortLabel AP2-EXP (Zhang) 10hpi Sig
     longLabel TF AP2-EXP (Zhang) at 10hpi from GSE184659 - Signal
@@ -645,9 +645,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-EXP_10hpi_Zhang_GSE184659.bw
     priority 101
 
-    track PfalTFs_AP2EXP_Zhang_10hpi_pk
+    track PfalTFs_AP2EXP_Zhang_10hpi_PKS
     parent PfalTFs_Peaks on
-    subGroups view=pk factorSource=fsAP2EXPZhang timepoint=t10
+    subGroups view=PKS factorSource=fsAP2EXPZhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-EXP (Zhang) 10hpi Pks
     longLabel TF AP2-EXP (Zhang) at 10hpi from GSE184659 - Peaks
@@ -655,9 +655,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-EXP_10hpi_Zhang_GSE184659.narrowPeak.bb
     priority 102
 
-    track PfalTFs_AP2EXP2_Zhang_40hpi_sig
+    track PfalTFs_AP2EXP2_Zhang_40hpi_SIG
     parent PfalTFs_Signal on
-    subGroups view=sig factorSource=fsAP2EXP2Zhang timepoint=t40
+    subGroups view=SIG factorSource=fsAP2EXP2Zhang timepoint=t40
     type bigWig
     shortLabel AP2-EXP2 (Zhang) 40hpi Sig
     longLabel TF AP2-EXP2 (Zhang) at 40hpi from GSE184659 - Signal
@@ -667,9 +667,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-EXP2_40hpi_Zhang_GSE184659.bw
     priority 103
 
-    track PfalTFs_AP2EXP2_Zhang_40hpi_pk
+    track PfalTFs_AP2EXP2_Zhang_40hpi_PKS
     parent PfalTFs_Peaks on
-    subGroups view=pk factorSource=fsAP2EXP2Zhang timepoint=t40
+    subGroups view=PKS factorSource=fsAP2EXP2Zhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-EXP2 (Zhang) 40hpi Pks
     longLabel TF AP2-EXP2 (Zhang) at 40hpi from GSE184659 - Peaks
@@ -677,9 +677,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-EXP2_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 104
 
-    track PfalTFs_AP2EXP_Zhang_25hpi_sig
+    track PfalTFs_AP2EXP_Zhang_25hpi_SIG
     parent PfalTFs_Signal on
-    subGroups view=sig factorSource=fsAP2EXPZhang timepoint=t25
+    subGroups view=SIG factorSource=fsAP2EXPZhang timepoint=t25
     type bigWig
     shortLabel AP2-EXP (Zhang) 25hpi Sig
     longLabel TF AP2-EXP (Zhang) at 25hpi from GSE184659 - Signal
@@ -689,9 +689,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-EXP_25hpi_Zhang_GSE184659.bw
     priority 105
 
-    track PfalTFs_AP2EXP_Zhang_25hpi_pk
+    track PfalTFs_AP2EXP_Zhang_25hpi_PKS
     parent PfalTFs_Peaks on
-    subGroups view=pk factorSource=fsAP2EXPZhang timepoint=t25
+    subGroups view=PKS factorSource=fsAP2EXPZhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-EXP (Zhang) 25hpi Pks
     longLabel TF AP2-EXP (Zhang) at 25hpi from GSE184659 - Peaks
@@ -699,9 +699,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-EXP_25hpi_Zhang_GSE184659.narrowPeak.bb
     priority 106
 
-    track PfalTFs_AP2EXP_Llinas_30hpi_sig
+    track PfalTFs_AP2EXP_Llinas_30hpi_SIG
     parent PfalTFs_Signal on
-    subGroups view=sig factorSource=fsAP2EXPLlina timepoint=t30
+    subGroups view=SIG factorSource=fsAP2EXPLlina timepoint=t30
     type bigWig
     shortLabel AP2-EXP (Llinas) 30hpi Sig
     longLabel TF AP2-EXP (Llinas) at 30hpi from PRJNA818769 - Signal
@@ -711,9 +711,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-EXP_30hpi_Llinas_PRJNA818769.bw
     priority 107
 
-    track PfalTFs_AP2EXP_Llinas_30hpi_pk
+    track PfalTFs_AP2EXP_Llinas_30hpi_PKS
     parent PfalTFs_Peaks on
-    subGroups view=pk factorSource=fsAP2EXPLlina timepoint=t30
+    subGroups view=PKS factorSource=fsAP2EXPLlina timepoint=t30
     type bigBed 6 +
     shortLabel AP2-EXP (Llinas) 30hpi Pks
     longLabel TF AP2-EXP (Llinas) at 30hpi from PRJNA818769 - Peaks
@@ -721,9 +721,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-EXP_30hpi_Llinas_PRJNA818769.narrowPeak.bb
     priority 108
 
-    track PfalTFs_AP2EXP_Zhang_40hpi_sig
+    track PfalTFs_AP2EXP_Zhang_40hpi_SIG
     parent PfalTFs_Signal on
-    subGroups view=sig factorSource=fsAP2EXPZhang timepoint=t40
+    subGroups view=SIG factorSource=fsAP2EXPZhang timepoint=t40
     type bigWig
     shortLabel AP2-EXP (Zhang) 40hpi Sig
     longLabel TF AP2-EXP (Zhang) at 40hpi from GSE184659 - Signal
@@ -733,9 +733,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-EXP_40hpi_Zhang_GSE184659.bw
     priority 109
 
-    track PfalTFs_AP2EXP_Zhang_40hpi_pk
+    track PfalTFs_AP2EXP_Zhang_40hpi_PKS
     parent PfalTFs_Peaks on
-    subGroups view=pk factorSource=fsAP2EXPZhang timepoint=t40
+    subGroups view=PKS factorSource=fsAP2EXPZhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-EXP (Zhang) 40hpi Pks
     longLabel TF AP2-EXP (Zhang) at 40hpi from GSE184659 - Peaks
@@ -743,9 +743,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-EXP_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 110
 
-    track PfalTFs_AP2G_Llinas_05hpi_sig
+    track PfalTFs_AP2G_Llinas_05hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2GLlina timepoint=t05
+    subGroups view=SIG factorSource=fsAP2GLlina timepoint=t05
     type bigWig
     shortLabel AP2-G (Llinas) 05hpi Sig
     longLabel TF AP2-G (Llinas) at 05hpi from GSE120448 - Signal
@@ -755,9 +755,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G_05hpi_Llinas_GSE120448.bw
     priority 111
 
-    track PfalTFs_AP2G_Llinas_05hpi_pk
+    track PfalTFs_AP2G_Llinas_05hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2GLlina timepoint=t05
+    subGroups view=PKS factorSource=fsAP2GLlina timepoint=t05
     type bigBed 6 +
     shortLabel AP2-G (Llinas) 05hpi Pks
     longLabel TF AP2-G (Llinas) at 05hpi from GSE120448 - Peaks
@@ -765,9 +765,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G_05hpi_Llinas_GSE120448.narrowPeak.bb
     priority 112
 
-    track PfalTFs_AP2G2_Zhang_10hpi_sig
+    track PfalTFs_AP2G2_Zhang_10hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2G2Zhang timepoint=t10
+    subGroups view=SIG factorSource=fsAP2G2Zhang timepoint=t10
     type bigWig
     shortLabel AP2-G2 (Zhang) 10hpi Sig
     longLabel TF AP2-G2 (Zhang) at 10hpi from GSE184659 - Signal
@@ -777,9 +777,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G2_10hpi_Zhang_GSE184659.bw
     priority 113
 
-    track PfalTFs_AP2G2_Zhang_10hpi_pk
+    track PfalTFs_AP2G2_Zhang_10hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2G2Zhang timepoint=t10
+    subGroups view=PKS factorSource=fsAP2G2Zhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-G2 (Zhang) 10hpi Pks
     longLabel TF AP2-G2 (Zhang) at 10hpi from GSE184659 - Peaks
@@ -787,9 +787,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G2_10hpi_Zhang_GSE184659.narrowPeak.bb
     priority 114
 
-    track PfalTFs_AP2G2_Zhang_25hpi_sig
+    track PfalTFs_AP2G2_Zhang_25hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2G2Zhang timepoint=t25
+    subGroups view=SIG factorSource=fsAP2G2Zhang timepoint=t25
     type bigWig
     shortLabel AP2-G2 (Zhang) 25hpi Sig
     longLabel TF AP2-G2 (Zhang) at 25hpi from GSE184659 - Signal
@@ -799,9 +799,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G2_25hpi_Zhang_GSE184659.bw
     priority 115
 
-    track PfalTFs_AP2G2_Zhang_25hpi_pk
+    track PfalTFs_AP2G2_Zhang_25hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2G2Zhang timepoint=t25
+    subGroups view=PKS factorSource=fsAP2G2Zhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-G2 (Zhang) 25hpi Pks
     longLabel TF AP2-G2 (Zhang) at 25hpi from GSE184659 - Peaks
@@ -809,9 +809,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G2_25hpi_Zhang_GSE184659.narrowPeak.bb
     priority 116
 
-    track PfalTFs_AP2G2_Llinas_30hpi_sig
+    track PfalTFs_AP2G2_Llinas_30hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2G2Llina timepoint=t30
+    subGroups view=SIG factorSource=fsAP2G2Llina timepoint=t30
     type bigWig
     shortLabel AP2-G2 (Llinas) 30hpi Sig
     longLabel TF AP2-G2 (Llinas) at 30hpi from GSE157753 - Signal
@@ -821,9 +821,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G2_30hpi_Llinas_GSE157753.bw
     priority 117
 
-    track PfalTFs_AP2G2_Llinas_30hpi_pk
+    track PfalTFs_AP2G2_Llinas_30hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2G2Llina timepoint=t30
+    subGroups view=PKS factorSource=fsAP2G2Llina timepoint=t30
     type bigBed 6 +
     shortLabel AP2-G2 (Llinas) 30hpi Pks
     longLabel TF AP2-G2 (Llinas) at 30hpi from GSE157753 - Peaks
@@ -831,9 +831,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G2_30hpi_Llinas_GSE157753.narrowPeak.bb
     priority 118
 
-    track PfalTFs_AP2G2_Zhang_40hpi_sig
+    track PfalTFs_AP2G2_Zhang_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2G2Zhang timepoint=t40
+    subGroups view=SIG factorSource=fsAP2G2Zhang timepoint=t40
     type bigWig
     shortLabel AP2-G2 (Zhang) 40hpi Sig
     longLabel TF AP2-G2 (Zhang) at 40hpi from GSE184659 - Signal
@@ -843,9 +843,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G2_40hpi_Zhang_GSE184659.bw
     priority 119
 
-    track PfalTFs_AP2G2_Zhang_40hpi_pk
+    track PfalTFs_AP2G2_Zhang_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2G2Zhang timepoint=t40
+    subGroups view=PKS factorSource=fsAP2G2Zhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-G2 (Zhang) 40hpi Pks
     longLabel TF AP2-G2 (Zhang) at 40hpi from GSE184659 - Peaks
@@ -853,9 +853,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G2_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 120
 
-    track PfalTFs_AP2G_Zhang_30hpi_sig
+    track PfalTFs_AP2G_Zhang_30hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2GZhang timepoint=t30
+    subGroups view=SIG factorSource=fsAP2GZhang timepoint=t30
     type bigWig
     shortLabel AP2-G (Zhang) 30hpi Sig
     longLabel TF AP2-G (Zhang) at 30hpi from GSE149774 - Signal
@@ -865,9 +865,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G_30hpi_Zhang_GSE149774.bw
     priority 121
 
-    track PfalTFs_AP2G_Zhang_30hpi_pk
+    track PfalTFs_AP2G_Zhang_30hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2GZhang timepoint=t30
+    subGroups view=PKS factorSource=fsAP2GZhang timepoint=t30
     type bigBed 6 +
     shortLabel AP2-G (Zhang) 30hpi Pks
     longLabel TF AP2-G (Zhang) at 30hpi from GSE149774 - Peaks
@@ -875,9 +875,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G_30hpi_Zhang_GSE149774.narrowPeak.bb
     priority 122
 
-    track PfalTFs_AP2G3_Zhang_10hpi_sig
+    track PfalTFs_AP2G3_Zhang_10hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2G3Zhang timepoint=t10
+    subGroups view=SIG factorSource=fsAP2G3Zhang timepoint=t10
     type bigWig
     shortLabel AP2-G3 (Zhang) 10hpi Sig
     longLabel TF AP2-G3 (Zhang) at 10hpi from GSE184659 - Signal
@@ -887,9 +887,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G3_10hpi_Zhang_GSE184659.bw
     priority 123
 
-    track PfalTFs_AP2G3_Zhang_10hpi_pk
+    track PfalTFs_AP2G3_Zhang_10hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2G3Zhang timepoint=t10
+    subGroups view=PKS factorSource=fsAP2G3Zhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-G3 (Zhang) 10hpi Pks
     longLabel TF AP2-G3 (Zhang) at 10hpi from GSE184659 - Peaks
@@ -897,9 +897,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G3_10hpi_Zhang_GSE184659.narrowPeak.bb
     priority 124
 
-    track PfalTFs_AP2G3_Zhang_25hpi_sig
+    track PfalTFs_AP2G3_Zhang_25hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2G3Zhang timepoint=t25
+    subGroups view=SIG factorSource=fsAP2G3Zhang timepoint=t25
     type bigWig
     shortLabel AP2-G3 (Zhang) 25hpi Sig
     longLabel TF AP2-G3 (Zhang) at 25hpi from GSE184659 - Signal
@@ -909,9 +909,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G3_25hpi_Zhang_GSE184659.bw
     priority 125
 
-    track PfalTFs_AP2G3_Zhang_25hpi_pk
+    track PfalTFs_AP2G3_Zhang_25hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2G3Zhang timepoint=t25
+    subGroups view=PKS factorSource=fsAP2G3Zhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-G3 (Zhang) 25hpi Pks
     longLabel TF AP2-G3 (Zhang) at 25hpi from GSE184659 - Peaks
@@ -919,9 +919,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G3_25hpi_Zhang_GSE184659.narrowPeak.bb
     priority 126
 
-    track PfalTFs_AP2G3_Zhang_40hpi_sig
+    track PfalTFs_AP2G3_Zhang_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2G3Zhang timepoint=t40
+    subGroups view=SIG factorSource=fsAP2G3Zhang timepoint=t40
     type bigWig
     shortLabel AP2-G3 (Zhang) 40hpi Sig
     longLabel TF AP2-G3 (Zhang) at 40hpi from GSE184659 - Signal
@@ -931,9 +931,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G3_40hpi_Zhang_GSE184659.bw
     priority 127
 
-    track PfalTFs_AP2G3_Zhang_40hpi_pk
+    track PfalTFs_AP2G3_Zhang_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2G3Zhang timepoint=t40
+    subGroups view=PKS factorSource=fsAP2G3Zhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-G3 (Zhang) 40hpi Pks
     longLabel TF AP2-G3 (Zhang) at 40hpi from GSE184659 - Peaks
@@ -941,9 +941,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G3_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 128
 
-    track PfalTFs_AP2G_Llinas_40hpi_sig
+    track PfalTFs_AP2G_Llinas_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2GLlina timepoint=t40
+    subGroups view=SIG factorSource=fsAP2GLlina timepoint=t40
     type bigWig
     shortLabel AP2-G (Llinas) 40hpi Sig
     longLabel TF AP2-G (Llinas) at 40hpi from GSE120448 - Signal
@@ -953,9 +953,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G_40hpi_Llinas_GSE120448.bw
     priority 129
 
-    track PfalTFs_AP2G_Llinas_40hpi_pk
+    track PfalTFs_AP2G_Llinas_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2GLlina timepoint=t40
+    subGroups view=PKS factorSource=fsAP2GLlina timepoint=t40
     type bigBed 6 +
     shortLabel AP2-G (Llinas) 40hpi Pks
     longLabel TF AP2-G (Llinas) at 40hpi from GSE120448 - Peaks
@@ -963,9 +963,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G_40hpi_Llinas_GSE120448.narrowPeak.bb
     priority 130
 
-    track PfalTFs_AP2G4_Zhang_40hpi_sig
+    track PfalTFs_AP2G4_Zhang_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2G4Zhang timepoint=t40
+    subGroups view=SIG factorSource=fsAP2G4Zhang timepoint=t40
     type bigWig
     shortLabel AP2-G4 (Zhang) 40hpi Sig
     longLabel TF AP2-G4 (Zhang) at 40hpi from GSE184659 - Signal
@@ -975,9 +975,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G4_40hpi_Zhang_GSE184659.bw
     priority 131
 
-    track PfalTFs_AP2G4_Zhang_40hpi_pk
+    track PfalTFs_AP2G4_Zhang_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2G4Zhang timepoint=t40
+    subGroups view=PKS factorSource=fsAP2G4Zhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-G4 (Zhang) 40hpi Pks
     longLabel TF AP2-G4 (Zhang) at 40hpi from GSE184659 - Peaks
@@ -985,9 +985,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G4_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 132
 
-    track PfalTFs_AP2G5_Zhang_10hpi_sig
+    track PfalTFs_AP2G5_Zhang_10hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2G5Zhang timepoint=t10
+    subGroups view=SIG factorSource=fsAP2G5Zhang timepoint=t10
     type bigWig
     shortLabel AP2-G5 (Zhang) 10hpi Sig
     longLabel TF AP2-G5 (Zhang) at 10hpi from GSE184659 - Signal
@@ -997,9 +997,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G5_10hpi_Zhang_GSE184659.bw
     priority 133
 
-    track PfalTFs_AP2G5_Zhang_10hpi_pk
+    track PfalTFs_AP2G5_Zhang_10hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2G5Zhang timepoint=t10
+    subGroups view=PKS factorSource=fsAP2G5Zhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-G5 (Zhang) 10hpi Pks
     longLabel TF AP2-G5 (Zhang) at 10hpi from GSE184659 - Peaks
@@ -1007,9 +1007,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G5_10hpi_Zhang_GSE184659.narrowPeak.bb
     priority 134
 
-    track PfalTFs_AP2G5_Zhang_25hpi_sig
+    track PfalTFs_AP2G5_Zhang_25hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2G5Zhang timepoint=t25
+    subGroups view=SIG factorSource=fsAP2G5Zhang timepoint=t25
     type bigWig
     shortLabel AP2-G5 (Zhang) 25hpi Sig
     longLabel TF AP2-G5 (Zhang) at 25hpi from GSE184659 - Signal
@@ -1019,9 +1019,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G5_25hpi_Zhang_GSE184659.bw
     priority 135
 
-    track PfalTFs_AP2G5_Zhang_25hpi_pk
+    track PfalTFs_AP2G5_Zhang_25hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2G5Zhang timepoint=t25
+    subGroups view=PKS factorSource=fsAP2G5Zhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-G5 (Zhang) 25hpi Pks
     longLabel TF AP2-G5 (Zhang) at 25hpi from GSE184659 - Peaks
@@ -1029,9 +1029,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G5_25hpi_Zhang_GSE184659.narrowPeak.bb
     priority 136
 
-    track PfalTFs_AP2G5_Zhang_30hpi_sig
+    track PfalTFs_AP2G5_Zhang_30hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2G5Zhang timepoint=t30
+    subGroups view=SIG factorSource=fsAP2G5Zhang timepoint=t30
     type bigWig
     shortLabel AP2-G5 (Zhang) 30hpi Sig
     longLabel TF AP2-G5 (Zhang) at 30hpi from GSE149774 - Signal
@@ -1041,9 +1041,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G5_30hpi_Zhang_GSE149774.bw
     priority 137
 
-    track PfalTFs_AP2G5_Zhang_30hpi_pk
+    track PfalTFs_AP2G5_Zhang_30hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2G5Zhang timepoint=t30
+    subGroups view=PKS factorSource=fsAP2G5Zhang timepoint=t30
     type bigBed 6 +
     shortLabel AP2-G5 (Zhang) 30hpi Pks
     longLabel TF AP2-G5 (Zhang) at 30hpi from GSE149774 - Peaks
@@ -1051,9 +1051,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G5_30hpi_Zhang_GSE149774.narrowPeak.bb
     priority 138
 
-    track PfalTFs_AP2G5_Zhang_40hpi_sig
+    track PfalTFs_AP2G5_Zhang_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2G5Zhang timepoint=t40
+    subGroups view=SIG factorSource=fsAP2G5Zhang timepoint=t40
     type bigWig
     shortLabel AP2-G5 (Zhang) 40hpi Sig
     longLabel TF AP2-G5 (Zhang) at 40hpi from GSE184659 - Signal
@@ -1063,9 +1063,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G5_40hpi_Zhang_GSE184659.bw
     priority 139
 
-    track PfalTFs_AP2G5_Zhang_40hpi_pk
+    track PfalTFs_AP2G5_Zhang_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2G5Zhang timepoint=t40
+    subGroups view=PKS factorSource=fsAP2G5Zhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-G5 (Zhang) 40hpi Pks
     longLabel TF AP2-G5 (Zhang) at 40hpi from GSE184659 - Peaks
@@ -1073,9 +1073,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-G5_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 140
 
-    track PfalTFs_AP2HC_Zhang_10hpi_sig
+    track PfalTFs_AP2HC_Zhang_10hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2HCZhang timepoint=t10
+    subGroups view=SIG factorSource=fsAP2HCZhang timepoint=t10
     type bigWig
     shortLabel AP2-HC (Zhang) 10hpi Sig
     longLabel TF AP2-HC (Zhang) at 10hpi from GSE184659 - Signal
@@ -1085,9 +1085,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HC_10hpi_Zhang_GSE184659.bw
     priority 141
 
-    track PfalTFs_AP2HC_Zhang_10hpi_pk
+    track PfalTFs_AP2HC_Zhang_10hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2HCZhang timepoint=t10
+    subGroups view=PKS factorSource=fsAP2HCZhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-HC (Zhang) 10hpi Pks
     longLabel TF AP2-HC (Zhang) at 10hpi from GSE184659 - Peaks
@@ -1095,9 +1095,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HC_10hpi_Zhang_GSE184659.narrowPeak.bb
     priority 142
 
-    track PfalTFs_AP2HC_Zhang_25hpi_sig
+    track PfalTFs_AP2HC_Zhang_25hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2HCZhang timepoint=t25
+    subGroups view=SIG factorSource=fsAP2HCZhang timepoint=t25
     type bigWig
     shortLabel AP2-HC (Zhang) 25hpi Sig
     longLabel TF AP2-HC (Zhang) at 25hpi from GSE184659 - Signal
@@ -1107,9 +1107,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HC_25hpi_Zhang_GSE184659.bw
     priority 143
 
-    track PfalTFs_AP2HC_Zhang_25hpi_pk
+    track PfalTFs_AP2HC_Zhang_25hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2HCZhang timepoint=t25
+    subGroups view=PKS factorSource=fsAP2HCZhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-HC (Zhang) 25hpi Pks
     longLabel TF AP2-HC (Zhang) at 25hpi from GSE184659 - Peaks
@@ -1117,9 +1117,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HC_25hpi_Zhang_GSE184659.narrowPeak.bb
     priority 144
 
-    track PfalTFs_AP2HC_Voss_40hpi_sig
+    track PfalTFs_AP2HC_Voss_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2HCVoss timepoint=t40
+    subGroups view=SIG factorSource=fsAP2HCVoss timepoint=t40
     type bigWig
     shortLabel AP2-HC (Voss) 40hpi Sig
     longLabel TF AP2-HC (Voss) at 40hpi from GSE154840 - Signal
@@ -1129,9 +1129,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HC_40hpi_Voss_GSE154840.bw
     priority 145
 
-    track PfalTFs_AP2HC_Voss_40hpi_pk
+    track PfalTFs_AP2HC_Voss_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2HCVoss timepoint=t40
+    subGroups view=PKS factorSource=fsAP2HCVoss timepoint=t40
     type bigBed 6 +
     shortLabel AP2-HC (Voss) 40hpi Pks
     longLabel TF AP2-HC (Voss) at 40hpi from GSE154840 - Peaks
@@ -1139,9 +1139,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HC_40hpi_Voss_GSE154840.narrowPeak.bb
     priority 146
 
-    track PfalTFs_AP2HC_Zhang_40hpi_sig
+    track PfalTFs_AP2HC_Zhang_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2HCZhang timepoint=t40
+    subGroups view=SIG factorSource=fsAP2HCZhang timepoint=t40
     type bigWig
     shortLabel AP2-HC (Zhang) 40hpi Sig
     longLabel TF AP2-HC (Zhang) at 40hpi from GSE184659 - Signal
@@ -1151,9 +1151,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HC_40hpi_Zhang_GSE184659.bw
     priority 147
 
-    track PfalTFs_AP2HC_Zhang_40hpi_pk
+    track PfalTFs_AP2HC_Zhang_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2HCZhang timepoint=t40
+    subGroups view=PKS factorSource=fsAP2HCZhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-HC (Zhang) 40hpi Pks
     longLabel TF AP2-HC (Zhang) at 40hpi from GSE184659 - Peaks
@@ -1161,9 +1161,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HC_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 148
 
-    track PfalTFs_AP2HS_Zhang_10hpi_sig
+    track PfalTFs_AP2HS_Zhang_10hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2HSZhang timepoint=t10
+    subGroups view=SIG factorSource=fsAP2HSZhang timepoint=t10
     type bigWig
     shortLabel AP2-HS (Zhang) 10hpi Sig
     longLabel TF AP2-HS (Zhang) at 10hpi from GSE184659 - Signal
@@ -1173,9 +1173,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HS_10hpi_Zhang_GSE184659.bw
     priority 149
 
-    track PfalTFs_AP2HS_Zhang_10hpi_pk
+    track PfalTFs_AP2HS_Zhang_10hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2HSZhang timepoint=t10
+    subGroups view=PKS factorSource=fsAP2HSZhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-HS (Zhang) 10hpi Pks
     longLabel TF AP2-HS (Zhang) at 10hpi from GSE184659 - Peaks
@@ -1183,9 +1183,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HS_10hpi_Zhang_GSE184659.narrowPeak.bb
     priority 150
 
-    track PfalTFs_AP2HS_Zhang_25hpi_sig
+    track PfalTFs_AP2HS_Zhang_25hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2HSZhang timepoint=t25
+    subGroups view=SIG factorSource=fsAP2HSZhang timepoint=t25
     type bigWig
     shortLabel AP2-HS (Zhang) 25hpi Sig
     longLabel TF AP2-HS (Zhang) at 25hpi from GSE184659 - Signal
@@ -1195,9 +1195,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HS_25hpi_Zhang_GSE184659.bw
     priority 151
 
-    track PfalTFs_AP2HS_Zhang_25hpi_pk
+    track PfalTFs_AP2HS_Zhang_25hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2HSZhang timepoint=t25
+    subGroups view=PKS factorSource=fsAP2HSZhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-HS (Zhang) 25hpi Pks
     longLabel TF AP2-HS (Zhang) at 25hpi from GSE184659 - Peaks
@@ -1205,9 +1205,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HS_25hpi_Zhang_GSE184659.narrowPeak.bb
     priority 152
 
-    track PfalTFs_AP2HS_Cortes_30hpi_sig
+    track PfalTFs_AP2HS_Cortes_30hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2HSCorte timepoint=t30
+    subGroups view=SIG factorSource=fsAP2HSCorte timepoint=t30
     type bigWig
     shortLabel AP2-HS (Cortes) 30hpi Sig
     longLabel TF AP2-HS (Cortes) at 30hpi from PRJNA670721 - Signal
@@ -1217,9 +1217,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HS_30hpi_Cortes_PRJNA670721.bw
     priority 153
 
-    track PfalTFs_AP2HS_Cortes_30hpi_pk
+    track PfalTFs_AP2HS_Cortes_30hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2HSCorte timepoint=t30
+    subGroups view=PKS factorSource=fsAP2HSCorte timepoint=t30
     type bigBed 6 +
     shortLabel AP2-HS (Cortes) 30hpi Pks
     longLabel TF AP2-HS (Cortes) at 30hpi from PRJNA670721 - Peaks
@@ -1227,9 +1227,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HS_30hpi_Cortes_PRJNA670721.narrowPeak.bb
     priority 154
 
-    track PfalTFs_AP2HS_Zhang_40hpi_sig
+    track PfalTFs_AP2HS_Zhang_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2HSZhang timepoint=t40
+    subGroups view=SIG factorSource=fsAP2HSZhang timepoint=t40
     type bigWig
     shortLabel AP2-HS (Zhang) 40hpi Sig
     longLabel TF AP2-HS (Zhang) at 40hpi from GSE184659 - Signal
@@ -1239,9 +1239,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HS_40hpi_Zhang_GSE184659.bw
     priority 155
 
-    track PfalTFs_AP2HS_Zhang_40hpi_pk
+    track PfalTFs_AP2HS_Zhang_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2HSZhang timepoint=t40
+    subGroups view=PKS factorSource=fsAP2HSZhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-HS (Zhang) 40hpi Pks
     longLabel TF AP2-HS (Zhang) at 40hpi from GSE184659 - Peaks
@@ -1249,9 +1249,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-HS_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 156
 
-    track PfalTFs_AP2I_Llinas_40hpi_sig
+    track PfalTFs_AP2I_Llinas_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2ILlina timepoint=t40
+    subGroups view=SIG factorSource=fsAP2ILlina timepoint=t40
     type bigWig
     shortLabel AP2-I (Llinas) 40hpi Sig
     longLabel TF AP2-I (Llinas) at 40hpi from GSE80293 - Signal
@@ -1261,9 +1261,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-I_40hpi_Llinas_GSE80293.bw
     priority 157
 
-    track PfalTFs_AP2I_Llinas_40hpi_pk
+    track PfalTFs_AP2I_Llinas_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2ILlina timepoint=t40
+    subGroups view=PKS factorSource=fsAP2ILlina timepoint=t40
     type bigBed 6 +
     shortLabel AP2-I (Llinas) 40hpi Pks
     longLabel TF AP2-I (Llinas) at 40hpi from GSE80293 - Peaks
@@ -1271,9 +1271,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-I_40hpi_Llinas_GSE80293.narrowPeak.bb
     priority 158
 
-    track PfalTFs_AP2L_Zhang_10hpi_sig
+    track PfalTFs_AP2L_Zhang_10hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2LZhang timepoint=t10
+    subGroups view=SIG factorSource=fsAP2LZhang timepoint=t10
     type bigWig
     shortLabel AP2-L (Zhang) 10hpi Sig
     longLabel TF AP2-L (Zhang) at 10hpi from GSE184659 - Signal
@@ -1283,9 +1283,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-L_10hpi_Zhang_GSE184659.bw
     priority 159
 
-    track PfalTFs_AP2L_Zhang_10hpi_pk
+    track PfalTFs_AP2L_Zhang_10hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2LZhang timepoint=t10
+    subGroups view=PKS factorSource=fsAP2LZhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-L (Zhang) 10hpi Pks
     longLabel TF AP2-L (Zhang) at 10hpi from GSE184659 - Peaks
@@ -1293,9 +1293,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-L_10hpi_Zhang_GSE184659.narrowPeak.bb
     priority 160
 
-    track PfalTFs_AP2L_Zhang_25hpi_sig
+    track PfalTFs_AP2L_Zhang_25hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2LZhang timepoint=t25
+    subGroups view=SIG factorSource=fsAP2LZhang timepoint=t25
     type bigWig
     shortLabel AP2-L (Zhang) 25hpi Sig
     longLabel TF AP2-L (Zhang) at 25hpi from GSE184659 - Signal
@@ -1305,9 +1305,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-L_25hpi_Zhang_GSE184659.bw
     priority 161
 
-    track PfalTFs_AP2L_Zhang_25hpi_pk
+    track PfalTFs_AP2L_Zhang_25hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2LZhang timepoint=t25
+    subGroups view=PKS factorSource=fsAP2LZhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-L (Zhang) 25hpi Pks
     longLabel TF AP2-L (Zhang) at 25hpi from GSE184659 - Peaks
@@ -1315,9 +1315,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-L_25hpi_Zhang_GSE184659.narrowPeak.bb
     priority 162
 
-    track PfalTFs_AP2L_Zhang_40hpi_sig
+    track PfalTFs_AP2L_Zhang_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2LZhang timepoint=t40
+    subGroups view=SIG factorSource=fsAP2LZhang timepoint=t40
     type bigWig
     shortLabel AP2-L (Zhang) 40hpi Sig
     longLabel TF AP2-L (Zhang) at 40hpi from GSE184659 - Signal
@@ -1327,9 +1327,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-L_40hpi_Zhang_GSE184659.bw
     priority 163
 
-    track PfalTFs_AP2L_Zhang_40hpi_pk
+    track PfalTFs_AP2L_Zhang_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2LZhang timepoint=t40
+    subGroups view=PKS factorSource=fsAP2LZhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-L (Zhang) 40hpi Pks
     longLabel TF AP2-L (Zhang) at 40hpi from GSE184659 - Peaks
@@ -1337,9 +1337,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-L_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 164
 
-    track PfalTFs_AP2LT_Zhang_10hpi_sig
+    track PfalTFs_AP2LT_Zhang_10hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2LTZhang timepoint=t10
+    subGroups view=SIG factorSource=fsAP2LTZhang timepoint=t10
     type bigWig
     shortLabel AP2-LT (Zhang) 10hpi Sig
     longLabel TF AP2-LT (Zhang) at 10hpi from GSE184659 - Signal
@@ -1349,9 +1349,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-LT_10hpi_Zhang_GSE184659.bw
     priority 165
 
-    track PfalTFs_AP2LT_Zhang_10hpi_pk
+    track PfalTFs_AP2LT_Zhang_10hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2LTZhang timepoint=t10
+    subGroups view=PKS factorSource=fsAP2LTZhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-LT (Zhang) 10hpi Pks
     longLabel TF AP2-LT (Zhang) at 10hpi from GSE184659 - Peaks
@@ -1359,9 +1359,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-LT_10hpi_Zhang_GSE184659.narrowPeak.bb
     priority 166
 
-    track PfalTFs_AP2LT_Zhang_25hpi_sig
+    track PfalTFs_AP2LT_Zhang_25hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2LTZhang timepoint=t25
+    subGroups view=SIG factorSource=fsAP2LTZhang timepoint=t25
     type bigWig
     shortLabel AP2-LT (Zhang) 25hpi Sig
     longLabel TF AP2-LT (Zhang) at 25hpi from GSE184659 - Signal
@@ -1371,9 +1371,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-LT_25hpi_Zhang_GSE184659.bw
     priority 167
 
-    track PfalTFs_AP2LT_Zhang_25hpi_pk
+    track PfalTFs_AP2LT_Zhang_25hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2LTZhang timepoint=t25
+    subGroups view=PKS factorSource=fsAP2LTZhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-LT (Zhang) 25hpi Pks
     longLabel TF AP2-LT (Zhang) at 25hpi from GSE184659 - Peaks
@@ -1381,9 +1381,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-LT_25hpi_Zhang_GSE184659.narrowPeak.bb
     priority 168
 
-    track PfalTFs_AP2LT_Llinas_40hpi_sig
+    track PfalTFs_AP2LT_Llinas_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2LTLlina timepoint=t40
+    subGroups view=SIG factorSource=fsAP2LTLlina timepoint=t40
     type bigWig
     shortLabel AP2-LT (Llinas) 40hpi Sig
     longLabel TF AP2-LT (Llinas) at 40hpi from GSE212052 - Signal
@@ -1393,9 +1393,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-LT_40hpi_Llinas_GSE212052.bw
     priority 169
 
-    track PfalTFs_AP2LT_Llinas_40hpi_pk
+    track PfalTFs_AP2LT_Llinas_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2LTLlina timepoint=t40
+    subGroups view=PKS factorSource=fsAP2LTLlina timepoint=t40
     type bigBed 6 +
     shortLabel AP2-LT (Llinas) 40hpi Pks
     longLabel TF AP2-LT (Llinas) at 40hpi from GSE212052 - Peaks
@@ -1403,9 +1403,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-LT_40hpi_Llinas_GSE212052.narrowPeak.bb
     priority 170
 
-    track PfalTFs_AP2LT_Zhang_40hpi_sig
+    track PfalTFs_AP2LT_Zhang_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2LTZhang timepoint=t40
+    subGroups view=SIG factorSource=fsAP2LTZhang timepoint=t40
     type bigWig
     shortLabel AP2-LT (Zhang) 40hpi Sig
     longLabel TF AP2-LT (Zhang) at 40hpi from GSE184659 - Signal
@@ -1415,9 +1415,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-LT_40hpi_Zhang_GSE184659.bw
     priority 171
 
-    track PfalTFs_AP2LT_Zhang_40hpi_pk
+    track PfalTFs_AP2LT_Zhang_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2LTZhang timepoint=t40
+    subGroups view=PKS factorSource=fsAP2LTZhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-LT (Zhang) 40hpi Pks
     longLabel TF AP2-LT (Zhang) at 40hpi from GSE184659 - Peaks
@@ -1425,9 +1425,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-LT_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 172
 
-    track PfalTFs_AP2O2_Zhang_25hpi_sig
+    track PfalTFs_AP2O2_Zhang_25hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2O2Zhang timepoint=t25
+    subGroups view=SIG factorSource=fsAP2O2Zhang timepoint=t25
     type bigWig
     shortLabel AP2-O2 (Zhang) 25hpi Sig
     longLabel TF AP2-O2 (Zhang) at 25hpi from GSE184659 - Signal
@@ -1437,9 +1437,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-O2_25hpi_Zhang_GSE184659.bw
     priority 173
 
-    track PfalTFs_AP2O2_Zhang_25hpi_pk
+    track PfalTFs_AP2O2_Zhang_25hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2O2Zhang timepoint=t25
+    subGroups view=PKS factorSource=fsAP2O2Zhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-O2 (Zhang) 25hpi Pks
     longLabel TF AP2-O2 (Zhang) at 25hpi from GSE184659 - Peaks
@@ -1447,9 +1447,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-O2_25hpi_Zhang_GSE184659.narrowPeak.bb
     priority 174
 
-    track PfalTFs_AP2O2_Zhang_40hpi_sig
+    track PfalTFs_AP2O2_Zhang_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2O2Zhang timepoint=t40
+    subGroups view=SIG factorSource=fsAP2O2Zhang timepoint=t40
     type bigWig
     shortLabel AP2-O2 (Zhang) 40hpi Sig
     longLabel TF AP2-O2 (Zhang) at 40hpi from GSE184659 - Signal
@@ -1459,9 +1459,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-O2_40hpi_Zhang_GSE184659.bw
     priority 175
 
-    track PfalTFs_AP2O2_Zhang_40hpi_pk
+    track PfalTFs_AP2O2_Zhang_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2O2Zhang timepoint=t40
+    subGroups view=PKS factorSource=fsAP2O2Zhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-O2 (Zhang) 40hpi Pks
     longLabel TF AP2-O2 (Zhang) at 40hpi from GSE184659 - Peaks
@@ -1469,9 +1469,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-O2_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 176
 
-    track PfalTFs_AP2O5_Zhang_10hpi_sig
+    track PfalTFs_AP2O5_Zhang_10hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2O5Zhang timepoint=t10
+    subGroups view=SIG factorSource=fsAP2O5Zhang timepoint=t10
     type bigWig
     shortLabel AP2-O5 (Zhang) 10hpi Sig
     longLabel TF AP2-O5 (Zhang) at 10hpi from GSE184659 - Signal
@@ -1481,9 +1481,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-O5_10hpi_Zhang_GSE184659.bw
     priority 177
 
-    track PfalTFs_AP2O5_Zhang_10hpi_pk
+    track PfalTFs_AP2O5_Zhang_10hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2O5Zhang timepoint=t10
+    subGroups view=PKS factorSource=fsAP2O5Zhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-O5 (Zhang) 10hpi Pks
     longLabel TF AP2-O5 (Zhang) at 10hpi from GSE184659 - Peaks
@@ -1491,9 +1491,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-O5_10hpi_Zhang_GSE184659.narrowPeak.bb
     priority 178
 
-    track PfalTFs_AP2O5_Zhang_25hpi_sig
+    track PfalTFs_AP2O5_Zhang_25hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2O5Zhang timepoint=t25
+    subGroups view=SIG factorSource=fsAP2O5Zhang timepoint=t25
     type bigWig
     shortLabel AP2-O5 (Zhang) 25hpi Sig
     longLabel TF AP2-O5 (Zhang) at 25hpi from GSE184659 - Signal
@@ -1503,9 +1503,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-O5_25hpi_Zhang_GSE184659.bw
     priority 179
 
-    track PfalTFs_AP2O5_Zhang_25hpi_pk
+    track PfalTFs_AP2O5_Zhang_25hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2O5Zhang timepoint=t25
+    subGroups view=PKS factorSource=fsAP2O5Zhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-O5 (Zhang) 25hpi Pks
     longLabel TF AP2-O5 (Zhang) at 25hpi from GSE184659 - Peaks
@@ -1513,9 +1513,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-O5_25hpi_Zhang_GSE184659.narrowPeak.bb
     priority 180
 
-    track PfalTFs_AP2O5_Zhang_40hpi_sig
+    track PfalTFs_AP2O5_Zhang_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2O5Zhang timepoint=t40
+    subGroups view=SIG factorSource=fsAP2O5Zhang timepoint=t40
     type bigWig
     shortLabel AP2-O5 (Zhang) 40hpi Sig
     longLabel TF AP2-O5 (Zhang) at 40hpi from GSE184659 - Signal
@@ -1525,9 +1525,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-O5_40hpi_Zhang_GSE184659.bw
     priority 181
 
-    track PfalTFs_AP2O5_Zhang_40hpi_pk
+    track PfalTFs_AP2O5_Zhang_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2O5Zhang timepoint=t40
+    subGroups view=PKS factorSource=fsAP2O5Zhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-O5 (Zhang) 40hpi Pks
     longLabel TF AP2-O5 (Zhang) at 40hpi from GSE184659 - Peaks
@@ -1535,9 +1535,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-O5_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 182
 
-    track PfalTFs_AP2P_Zhang_10hpi_sig
+    track PfalTFs_AP2P_Zhang_10hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2PZhang timepoint=t10
+    subGroups view=SIG factorSource=fsAP2PZhang timepoint=t10
     type bigWig
     shortLabel AP2-P (Zhang) 10hpi Sig
     longLabel TF AP2-P (Zhang) at 10hpi from GSE184659 - Signal
@@ -1547,9 +1547,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-P_10hpi_Zhang_GSE184659.bw
     priority 183
 
-    track PfalTFs_AP2P_Zhang_10hpi_pk
+    track PfalTFs_AP2P_Zhang_10hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2PZhang timepoint=t10
+    subGroups view=PKS factorSource=fsAP2PZhang timepoint=t10
     type bigBed 6 +
     shortLabel AP2-P (Zhang) 10hpi Pks
     longLabel TF AP2-P (Zhang) at 10hpi from GSE184659 - Peaks
@@ -1557,9 +1557,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-P_10hpi_Zhang_GSE184659.narrowPeak.bb
     priority 184
 
-    track PfalTFs_AP2P_LeRoch_16hpi_sig
+    track PfalTFs_AP2P_LeRoch_16hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2PLeRoc timepoint=t16
+    subGroups view=SIG factorSource=fsAP2PLeRoc timepoint=t16
     type bigWig
     shortLabel AP2-P (LeRoch) 16hpi Sig
     longLabel TF AP2-P (LeRoch) at 16hpi from GSE190497 - Signal
@@ -1569,9 +1569,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-P_16hpi_LeRoch_GSE190497.bw
     priority 185
 
-    track PfalTFs_AP2P_LeRoch_16hpi_pk
+    track PfalTFs_AP2P_LeRoch_16hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2PLeRoc timepoint=t16
+    subGroups view=PKS factorSource=fsAP2PLeRoc timepoint=t16
     type bigBed 6 +
     shortLabel AP2-P (LeRoch) 16hpi Pks
     longLabel TF AP2-P (LeRoch) at 16hpi from GSE190497 - Peaks
@@ -1579,9 +1579,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-P_16hpi_LeRoch_GSE190497.narrowPeak.bb
     priority 186
 
-    track PfalTFs_AP2P_Zhang_25hpi_sig
+    track PfalTFs_AP2P_Zhang_25hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2PZhang timepoint=t25
+    subGroups view=SIG factorSource=fsAP2PZhang timepoint=t25
     type bigWig
     shortLabel AP2-P (Zhang) 25hpi Sig
     longLabel TF AP2-P (Zhang) at 25hpi from GSE184659 - Signal
@@ -1591,9 +1591,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-P_25hpi_Zhang_GSE184659.bw
     priority 187
 
-    track PfalTFs_AP2P_Zhang_25hpi_pk
+    track PfalTFs_AP2P_Zhang_25hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2PZhang timepoint=t25
+    subGroups view=PKS factorSource=fsAP2PZhang timepoint=t25
     type bigBed 6 +
     shortLabel AP2-P (Zhang) 25hpi Pks
     longLabel TF AP2-P (Zhang) at 25hpi from GSE184659 - Peaks
@@ -1601,9 +1601,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-P_25hpi_Zhang_GSE184659.narrowPeak.bb
     priority 188
 
-    track PfalTFs_AP2P_LeRoch_40hpi_sig
+    track PfalTFs_AP2P_LeRoch_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2PLeRoc timepoint=t40
+    subGroups view=SIG factorSource=fsAP2PLeRoc timepoint=t40
     type bigWig
     shortLabel AP2-P (LeRoch) 40hpi Sig
     longLabel TF AP2-P (LeRoch) at 40hpi from GSE190497 - Signal
@@ -1613,9 +1613,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-P_40hpi_LeRoch_GSE190497.bw
     priority 189
 
-    track PfalTFs_AP2P_LeRoch_40hpi_pk
+    track PfalTFs_AP2P_LeRoch_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2PLeRoc timepoint=t40
+    subGroups view=PKS factorSource=fsAP2PLeRoc timepoint=t40
     type bigBed 6 +
     shortLabel AP2-P (LeRoch) 40hpi Pks
     longLabel TF AP2-P (LeRoch) at 40hpi from GSE190497 - Peaks
@@ -1623,9 +1623,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-P_40hpi_LeRoch_GSE190497.narrowPeak.bb
     priority 190
 
-    track PfalTFs_AP2P_Zhang_40hpi_sig
+    track PfalTFs_AP2P_Zhang_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsAP2PZhang timepoint=t40
+    subGroups view=SIG factorSource=fsAP2PZhang timepoint=t40
     type bigWig
     shortLabel AP2-P (Zhang) 40hpi Sig
     longLabel TF AP2-P (Zhang) at 40hpi from GSE184659 - Signal
@@ -1635,9 +1635,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-P_40hpi_Zhang_GSE184659.bw
     priority 191
 
-    track PfalTFs_AP2P_Zhang_40hpi_pk
+    track PfalTFs_AP2P_Zhang_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsAP2PZhang timepoint=t40
+    subGroups view=PKS factorSource=fsAP2PZhang timepoint=t40
     type bigBed 6 +
     shortLabel AP2-P (Zhang) 40hpi Pks
     longLabel TF AP2-P (Zhang) at 40hpi from GSE184659 - Peaks
@@ -1645,9 +1645,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/AP2-P_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 192
 
-    track PfalTFs_PF3D7_0613800_Zhang_10hpi_sig
+    track PfalTFs_PF3D7_0613800_Zhang_10hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsPF3D706138Zhang timepoint=t10
+    subGroups view=SIG factorSource=fsPF3D706138Zhang timepoint=t10
     type bigWig
     shortLabel PF3D7_0613800 (Zhang) 10hpi Sig
     longLabel TF PF3D7_0613800 (Zhang) at 10hpi from GSE184659 - Signal
@@ -1657,9 +1657,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_0613800_10hpi_Zhang_GSE184659.bw
     priority 193
 
-    track PfalTFs_PF3D7_0613800_Zhang_10hpi_pk
+    track PfalTFs_PF3D7_0613800_Zhang_10hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsPF3D706138Zhang timepoint=t10
+    subGroups view=PKS factorSource=fsPF3D706138Zhang timepoint=t10
     type bigBed 6 +
     shortLabel PF3D7_0613800 (Zhang) 10hpi Pks
     longLabel TF PF3D7_0613800 (Zhang) at 10hpi from GSE184659 - Peaks
@@ -1667,9 +1667,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_0613800_10hpi_Zhang_GSE184659.narrowPeak.bb
     priority 194
 
-    track PfalTFs_PF3D7_0613800_Zhang_25hpi_sig
+    track PfalTFs_PF3D7_0613800_Zhang_25hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsPF3D706138Zhang timepoint=t25
+    subGroups view=SIG factorSource=fsPF3D706138Zhang timepoint=t25
     type bigWig
     shortLabel PF3D7_0613800 (Zhang) 25hpi Sig
     longLabel TF PF3D7_0613800 (Zhang) at 25hpi from GSE184659 - Signal
@@ -1679,9 +1679,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_0613800_25hpi_Zhang_GSE184659.bw
     priority 195
 
-    track PfalTFs_PF3D7_0613800_Zhang_25hpi_pk
+    track PfalTFs_PF3D7_0613800_Zhang_25hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsPF3D706138Zhang timepoint=t25
+    subGroups view=PKS factorSource=fsPF3D706138Zhang timepoint=t25
     type bigBed 6 +
     shortLabel PF3D7_0613800 (Zhang) 25hpi Pks
     longLabel TF PF3D7_0613800 (Zhang) at 25hpi from GSE184659 - Peaks
@@ -1689,9 +1689,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_0613800_25hpi_Zhang_GSE184659.narrowPeak.bb
     priority 196
 
-    track PfalTFs_PF3D7_0613800_Zhang_40hpi_sig
+    track PfalTFs_PF3D7_0613800_Zhang_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsPF3D706138Zhang timepoint=t40
+    subGroups view=SIG factorSource=fsPF3D706138Zhang timepoint=t40
     type bigWig
     shortLabel PF3D7_0613800 (Zhang) 40hpi Sig
     longLabel TF PF3D7_0613800 (Zhang) at 40hpi from GSE184659 - Signal
@@ -1701,9 +1701,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_0613800_40hpi_Zhang_GSE184659.bw
     priority 197
 
-    track PfalTFs_PF3D7_0613800_Zhang_40hpi_pk
+    track PfalTFs_PF3D7_0613800_Zhang_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsPF3D706138Zhang timepoint=t40
+    subGroups view=PKS factorSource=fsPF3D706138Zhang timepoint=t40
     type bigBed 6 +
     shortLabel PF3D7_0613800 (Zhang) 40hpi Pks
     longLabel TF PF3D7_0613800 (Zhang) at 40hpi from GSE184659 - Peaks
@@ -1711,9 +1711,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_0613800_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 198
 
-    track PfalTFs_PF3D7_1115500_Zhang_10hpi_sig
+    track PfalTFs_PF3D7_1115500_Zhang_10hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsPF3D711155Zhang timepoint=t10
+    subGroups view=SIG factorSource=fsPF3D711155Zhang timepoint=t10
     type bigWig
     shortLabel PF3D7_1115500 (Zhang) 10hpi Sig
     longLabel TF PF3D7_1115500 (Zhang) at 10hpi from GSE184659 - Signal
@@ -1723,9 +1723,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_1115500_10hpi_Zhang_GSE184659.bw
     priority 199
 
-    track PfalTFs_PF3D7_1115500_Zhang_10hpi_pk
+    track PfalTFs_PF3D7_1115500_Zhang_10hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsPF3D711155Zhang timepoint=t10
+    subGroups view=PKS factorSource=fsPF3D711155Zhang timepoint=t10
     type bigBed 6 +
     shortLabel PF3D7_1115500 (Zhang) 10hpi Pks
     longLabel TF PF3D7_1115500 (Zhang) at 10hpi from GSE184659 - Peaks
@@ -1733,9 +1733,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_1115500_10hpi_Zhang_GSE184659.narrowPeak.bb
     priority 200
 
-    track PfalTFs_PF3D7_1115500_Zhang_25hpi_sig
+    track PfalTFs_PF3D7_1115500_Zhang_25hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsPF3D711155Zhang timepoint=t25
+    subGroups view=SIG factorSource=fsPF3D711155Zhang timepoint=t25
     type bigWig
     shortLabel PF3D7_1115500 (Zhang) 25hpi Sig
     longLabel TF PF3D7_1115500 (Zhang) at 25hpi from GSE184659 - Signal
@@ -1745,9 +1745,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_1115500_25hpi_Zhang_GSE184659.bw
     priority 201
 
-    track PfalTFs_PF3D7_1115500_Zhang_25hpi_pk
+    track PfalTFs_PF3D7_1115500_Zhang_25hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsPF3D711155Zhang timepoint=t25
+    subGroups view=PKS factorSource=fsPF3D711155Zhang timepoint=t25
     type bigBed 6 +
     shortLabel PF3D7_1115500 (Zhang) 25hpi Pks
     longLabel TF PF3D7_1115500 (Zhang) at 25hpi from GSE184659 - Peaks
@@ -1755,9 +1755,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_1115500_25hpi_Zhang_GSE184659.narrowPeak.bb
     priority 202
 
-    track PfalTFs_PF3D7_1115500_Zhang_40hpi_sig
+    track PfalTFs_PF3D7_1115500_Zhang_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsPF3D711155Zhang timepoint=t40
+    subGroups view=SIG factorSource=fsPF3D711155Zhang timepoint=t40
     type bigWig
     shortLabel PF3D7_1115500 (Zhang) 40hpi Sig
     longLabel TF PF3D7_1115500 (Zhang) at 40hpi from GSE184659 - Signal
@@ -1767,9 +1767,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_1115500_40hpi_Zhang_GSE184659.bw
     priority 203
 
-    track PfalTFs_PF3D7_1115500_Zhang_40hpi_pk
+    track PfalTFs_PF3D7_1115500_Zhang_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsPF3D711155Zhang timepoint=t40
+    subGroups view=PKS factorSource=fsPF3D711155Zhang timepoint=t40
     type bigBed 6 +
     shortLabel PF3D7_1115500 (Zhang) 40hpi Pks
     longLabel TF PF3D7_1115500 (Zhang) at 40hpi from GSE184659 - Peaks
@@ -1777,9 +1777,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_1115500_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 204
 
-    track PfalTFs_PF3D7_1239200_Zhang_10hpi_sig
+    track PfalTFs_PF3D7_1239200_Zhang_10hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsPF3D712392Zhang timepoint=t10
+    subGroups view=SIG factorSource=fsPF3D712392Zhang timepoint=t10
     type bigWig
     shortLabel PF3D7_1239200 (Zhang) 10hpi Sig
     longLabel TF PF3D7_1239200 (Zhang) at 10hpi from GSE184659 - Signal
@@ -1789,9 +1789,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_1239200_10hpi_Zhang_GSE184659.bw
     priority 205
 
-    track PfalTFs_PF3D7_1239200_Zhang_10hpi_pk
+    track PfalTFs_PF3D7_1239200_Zhang_10hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsPF3D712392Zhang timepoint=t10
+    subGroups view=PKS factorSource=fsPF3D712392Zhang timepoint=t10
     type bigBed 6 +
     shortLabel PF3D7_1239200 (Zhang) 10hpi Pks
     longLabel TF PF3D7_1239200 (Zhang) at 10hpi from GSE184659 - Peaks
@@ -1799,9 +1799,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_1239200_10hpi_Zhang_GSE184659.narrowPeak.bb
     priority 206
 
-    track PfalTFs_PF3D7_1239200_Zhang_25hpi_sig
+    track PfalTFs_PF3D7_1239200_Zhang_25hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsPF3D712392Zhang timepoint=t25
+    subGroups view=SIG factorSource=fsPF3D712392Zhang timepoint=t25
     type bigWig
     shortLabel PF3D7_1239200 (Zhang) 25hpi Sig
     longLabel TF PF3D7_1239200 (Zhang) at 25hpi from GSE184659 - Signal
@@ -1811,9 +1811,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_1239200_25hpi_Zhang_GSE184659.bw
     priority 207
 
-    track PfalTFs_PF3D7_1239200_Zhang_25hpi_pk
+    track PfalTFs_PF3D7_1239200_Zhang_25hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsPF3D712392Zhang timepoint=t25
+    subGroups view=PKS factorSource=fsPF3D712392Zhang timepoint=t25
     type bigBed 6 +
     shortLabel PF3D7_1239200 (Zhang) 25hpi Pks
     longLabel TF PF3D7_1239200 (Zhang) at 25hpi from GSE184659 - Peaks
@@ -1821,9 +1821,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_1239200_25hpi_Zhang_GSE184659.narrowPeak.bb
     priority 208
 
-    track PfalTFs_PF3D7_1239200_Zhang_40hpi_sig
+    track PfalTFs_PF3D7_1239200_Zhang_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsPF3D712392Zhang timepoint=t40
+    subGroups view=SIG factorSource=fsPF3D712392Zhang timepoint=t40
     type bigWig
     shortLabel PF3D7_1239200 (Zhang) 40hpi Sig
     longLabel TF PF3D7_1239200 (Zhang) at 40hpi from GSE184659 - Signal
@@ -1833,9 +1833,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_1239200_40hpi_Zhang_GSE184659.bw
     priority 209
 
-    track PfalTFs_PF3D7_1239200_Zhang_40hpi_pk
+    track PfalTFs_PF3D7_1239200_Zhang_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsPF3D712392Zhang timepoint=t40
+    subGroups view=PKS factorSource=fsPF3D712392Zhang timepoint=t40
     type bigBed 6 +
     shortLabel PF3D7_1239200 (Zhang) 40hpi Pks
     longLabel TF PF3D7_1239200 (Zhang) at 40hpi from GSE184659 - Peaks
@@ -1843,9 +1843,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/PF3D7_1239200_40hpi_Zhang_GSE184659.narrowPeak.bb
     priority 210
 
-    track PfalTFs_SIP2_Voss_40hpi_sig
+    track PfalTFs_SIP2_Voss_40hpi_SIG
     parent PfalTFs_Signal off
-    subGroups view=sig factorSource=fsSIP2Voss timepoint=t40
+    subGroups view=SIG factorSource=fsSIP2Voss timepoint=t40
     type bigWig
     shortLabel SIP2 (Voss) 40hpi Sig
     longLabel TF SIP2 (Voss) at 40hpi from unpublished - Signal
@@ -1855,9 +1855,9 @@ viewUi on
     bigDataUrl http://e1-lugh2.science.psu.edu/data/ucsc_tracks/mahony/plasmodium-chrom-states/data/SIP2_40hpi_Voss_unpublished.bw
     priority 211
 
-    track PfalTFs_SIP2_Voss_40hpi_pk
+    track PfalTFs_SIP2_Voss_40hpi_PKS
     parent PfalTFs_Peaks off
-    subGroups view=pk factorSource=fsSIP2Voss timepoint=t40
+    subGroups view=PKS factorSource=fsSIP2Voss timepoint=t40
     type bigBed 6 +
     shortLabel SIP2 (Voss) 40hpi Pks
     longLabel TF SIP2 (Voss) at 40hpi from unpublished - Peaks
