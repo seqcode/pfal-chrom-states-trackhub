@@ -151,8 +151,8 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
     # --- Print Parent Track Definition with Subgroups ---
     print(f"track {parent_track_id}")
     print(f"compositeTrack on")
-    print(f"shortLabel Histone Marks")
-    print(f"longLabel P. falciparum Histone Marks and Accessibility")
+    print(f"shortLabel IDC Histone Marks")
+    print(f"longLabel P. falciparum IDC Histone Marks and Accessibility")
     print(f"type bigWig")
     print(f"visibility full")
     print(f"autoScale off")
@@ -330,13 +330,11 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
     # --- Print Parent Track Definition with Subgroups ---
     print(f"track {parent_track_id}")
     print(f"compositeTrack on")
-    print(f"shortLabel TFs")
-    print(f"longLabel P. falciparum Transcription Factor ChIP-seq")
-    print(f"visibility dense")
-    print(f"group regulation")
-    print(f"priority 30")
+    print(f"shortLabel IDC TF Binding")
+    print(f"longLabel P. falciparum IDC Transcription Factor ChIP-seq")
+    print(f"visibility full")
+    print(f"priority 100")
     print(f"dragAndDrop subTracks")
-    print(f"noInherit on")
 
     # SubGroup Definitions
     print(f"subGroup1 view Views Signal={view_map['Signal']} Peaks={view_map['Peaks']}")
@@ -349,13 +347,12 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
 
     # Dimensions and Sorting
     print(f"dimensions dimX=factorSource dimY=timepoint dimA=view") # Adjusted dimensions
-    print(f"sortOrder view=+ factorSource=+ timepoint=+") # Adjusted sort order
-    print(f"visibilityViewDefaults {view_map['Signal']}=full {view_map['Peaks']}=hide")
+    print(f"sortOrder timepoint=+ factorSource=+ view=+") # Adjusted sort order
     print("")
 
 
     # --- Second Pass: Print Subtrack Entries ---
-    priority_counter = 1
+    priority_counter = 101
     for data in subtrack_data:
         filename = data['filename']
         tf_name = data['tf_name']
@@ -381,8 +378,12 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
         short_label = f"{tf_name} ({source_name}) {timepoint} {short_label_view_suffix}"
         long_label = f"TF {tf_name} ({source_name}) at {timepoint} from {source_id} - {view_type}"
 
+        selected="on"
+        if "AP2-EXP" in tf_name.upper():
+            selected = "on"
+
         print(f"    track {track_line_id}")
-        print(f"    parent {parent_track_id} on")
+        print(f"    parent {parent_track_id} {selected}")
         # Adjusted subGroups attribute
         print(f"    subGroups view={view_tag} factorSource={fs_tag} timepoint={tp_tag}")
         
@@ -442,5 +443,5 @@ if __name__ == "__main__":
     create_signal_trackdb(args.signal_list, BASE_URL, HISTONE_PARENT_ID)
 
     # Call function for TFs / Signal Tracks & Peaks
-    #create_tf_trackdb(args.tf_list, BASE_URL, TF_PARENT_ID)
+    create_tf_trackdb(args.tf_list, BASE_URL, TF_PARENT_ID)
 
