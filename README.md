@@ -3,7 +3,7 @@ Plasmodium falciparum chromatin state trackhubs for UCSC genome browser
 
 ## Chromatin states
 
-Bigbed files for chromatin state tracks are available in the [chrom-states] directory.
+Bigbed files for chromatin state tracks are available in the [chrom-states](chrom-states) directory.
 
 ## UCSC trackhub
 
