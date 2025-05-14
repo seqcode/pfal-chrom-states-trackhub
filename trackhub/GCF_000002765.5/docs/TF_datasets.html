@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Transcription Factors</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Transcription Factors</h1>
+</header>
+<p>The transcription factor (TF) datasets used in this work came from a
+variety of labs as shown below. Every dataset was reanalyzed as
+described in the methods section.</p>
+<p><strong>AP2-EXP2</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022">(Shang et al.,
+2022)</span></p>
+<p><strong>PF3D7_0613800</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022">(Shang et al.,
+2022)</span></p>
+<p><strong>AP2-P</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022 subudhiDNAbindingProteinPfAP2P2023">(Shang
+et al., 2022; Subudhi et al., 2023)</span></p>
+<p><strong>PF3D7_1115500</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022">(Shang et al.,
+2022)</span></p>
+<p><strong>PF3D7_1239200</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022">(Shang et al.,
+2022)</span></p>
+<p><strong>AP2-EXP</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022 russellInhibitorsApiAP2Protein2022">(Russell
+et al., 2022; Shang et al., 2022)</span></p>
+<p><strong>AP2-G2</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022 singhPfAP2G2TranscriptionFactor2021">(Shang
+et al., 2022; Singh et al., 2021)</span></p>
+<p><strong>AP2-G3</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022">(Shang et al.,
+2022)</span></p>
+<p><strong>AP2-G4</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022">(Shang et al.,
+2022)</span></p>
+<p><strong>AP2-G5</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022 shangCascadeTranscriptionalRepression2021">(Shang
+et al., 2021, 2022)</span></p>
+<p><strong>AP2-G</strong> — <span class="citation"
+data-cites="joslingDissectingRolePfAP2G2020 shangCascadeTranscriptionalRepression2021">(Josling
+et al., 2020; Shang et al., 2021)</span></p>
+<p><strong>AP2-HC</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022 carringtonApiAP2FactorPfAP2HC2021a">(Carrington
+et al., 2021; Shang et al., 2022)</span></p>
+<p><strong>AP2-HS</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022 tinto-fontHeatshockResponseRegulated2021">(Shang
+et al., 2022; Tintó-Font et al., 2021)</span></p>
+<p><strong>AP2-I</strong> — <span class="citation"
+data-cites="santosRedBloodCell2017a">(Santos et al., 2017)</span></p>
+<p><strong>AP2-LT</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022 bonnellDNASequenceChromatin2024">(Bonnell
+et al., 2024; Shang et al., 2022)</span></p>
+<p><strong>AP2-L</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022">(Shang et al.,
+2022)</span></p>
+<p><strong>AP2-O2</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022">(Shang et al.,
+2022)</span></p>
+<p><strong>AP2-O5</strong> — <span class="citation"
+data-cites="shangGenomewideLandscapeApiAP22022">(Shang et al.,
+2022)</span></p>
+<p><strong>SIP2</strong> — unpublished</p>
+<h3 class="unnumbered" id="references">References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent"
+data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-bonnellDNASequenceChromatin2024" class="csl-entry"
+role="listitem">
+Bonnell, V. A., Zhang, Y., Brown, A. S., Horton, J., Josling, G. A.,
+Chiu, T.-P., Rohs, R., Mahony, S., Gordân, R., &amp; Llinás, M. (2024).
+<span>DNA</span> sequence and chromatin differentiate sequence-specific
+transcription factor binding in the human malaria parasite
+<span>Plasmodium</span> falciparum. <em>Nucleic Acids Research</em>,
+2023.03.31.535174. <a
+href="https://doi.org/10.1093/nar/gkae585">https://doi.org/10.1093/nar/gkae585</a>
+</div>
+<div id="ref-carringtonApiAP2FactorPfAP2HC2021a" class="csl-entry"
+role="listitem">
+Carrington, E., Cooijmans, R. H. M., Keller, D., Toenhake, C. G.,
+Bártfai, R., &amp; Voss, T. S. (2021). The <span>ApiAP2</span> factor
+<span>PfAP2-HC</span> is an integral component of heterochromatin in the
+malaria parasite <span>Plasmodium</span> falciparum. <em>iScience</em>,
+<em>24</em>(5), 102444. <a
+href="https://doi.org/10.1016/j.isci.2021.102444">https://doi.org/10.1016/j.isci.2021.102444</a>
+</div>
+<div id="ref-joslingDissectingRolePfAP2G2020" class="csl-entry"
+role="listitem">
+Josling, G. A., Russell, T. J., Venezia, J., Orchard, L., van Biljon,
+R., Painter, H. J., &amp; Llinás, M. (2020). Dissecting the role of
+<span>PfAP2-G</span> in malaria gametocytogenesis. <em>Nature
+Communications</em>, <em>11</em>(1), 1503. <a
+href="https://doi.org/10.1038/s41467-020-15026-0">https://doi.org/10.1038/s41467-020-15026-0</a>
+</div>
+<div id="ref-russellInhibitorsApiAP2Protein2022" class="csl-entry"
+role="listitem">
+Russell, T. J., De Silva, E. K., Crowley, V. M., Shaw-Saliba, K., Dube,
+N., Josling, G., Pasaje, C. F. A., Kouskoumvekaki, I., Panagiotou, G.,
+Niles, J. C., Jacobs-Lorena, M., Denise Okafor, C., Gamo, F.-J., &amp;
+Llinás, M. (2022). Inhibitors of <span>ApiAP2</span> protein
+<span>DNA</span> binding exhibit multistage activity against
+<span>Plasmodium</span> parasites. <em>PLoS Pathogens</em>,
+<em>18</em>(10), e1010887. <a
+href="https://doi.org/10.1371/journal.ppat.1010887">https://doi.org/10.1371/journal.ppat.1010887</a>
+</div>
+<div id="ref-santosRedBloodCell2017a" class="csl-entry" role="listitem">
+Santos, J. M., Josling, G., Ross, P., Joshi, P., Orchard, L., Campbell,
+T., Schieler, A., Cristea, I. M., &amp; Llinás, M. (2017). Red
+<span>Blood Cell Invasion</span> by the <span>Malaria Parasite Is
+Coordinated</span> by the <span>PfAP2-I Transcription Factor</span>.
+<em>Cell Host &amp; Microbe</em>, <em>21</em>(6), 731–741.e10. <a
+href="https://doi.org/10.1016/j.chom.2017.05.006">https://doi.org/10.1016/j.chom.2017.05.006</a>
+</div>
+<div id="ref-shangCascadeTranscriptionalRepression2021"
+class="csl-entry" role="listitem">
+Shang, X., Shen, S., Tang, J., He, X., Zhao, Y., Wang, C., He, X., Guo,
+G., Liu, M., Wang, L., Zhu, Q., Yang, G., Jiang, C., Zhang, M., Yu, X.,
+Han, J., Culleton, R., Jiang, L., Cao, J., … Zhang, Q. (2021). A cascade
+of transcriptional repression determines sexual commitment and
+development in <span>Plasmodium</span> falciparum. <em>Nucleic Acids
+Research</em>, <em>49</em>(16), 9264–9279. <a
+href="https://doi.org/10.1093/nar/gkab683">https://doi.org/10.1093/nar/gkab683</a>
+</div>
+<div id="ref-shangGenomewideLandscapeApiAP22022" class="csl-entry"
+role="listitem">
+Shang, X., Wang, C., Fan, Y., Guo, G., Wang, F., Zhao, Y., Sheng, F.,
+Tang, J., He, X., Yu, X., Zhang, M., Zhu, G., Yin, S., Mu, J., Culleton,
+R., Cao, J., Jiang, M., &amp; Zhang, Q. (2022). Genome-wide landscape of
+<span>ApiAP2</span> transcription factors reveals a
+heterochromatin-associated regulatory network during
+<span>Plasmodium</span> falciparum blood-stage development. <em>Nucleic
+Acids Research</em>, <em>50</em>(6), 3413–3431. <a
+href="https://doi.org/10.1093/nar/gkac176">https://doi.org/10.1093/nar/gkac176</a>
+</div>
+<div id="ref-singhPfAP2G2TranscriptionFactor2021" class="csl-entry"
+role="listitem">
+Singh, S., Santos, J. M., Orchard, L. M., Yamada, N., van Biljon, R.,
+Painter, H. J., Mahony, S., &amp; Llinás, M. (2021). The
+<span>PfAP2-G2</span> transcription factor is a critical regulator of
+gametocyte maturation. <em>Molecular Microbiology</em>, <em>115</em>(5),
+1005–1024. <a
+href="https://doi.org/10.1111/mmi.14676">https://doi.org/10.1111/mmi.14676</a>
+</div>
+<div id="ref-subudhiDNAbindingProteinPfAP2P2023" class="csl-entry"
+role="listitem">
+Subudhi, A. K., Green, J. L., Satyam, R., Salunke, R. P., Lenz, T.,
+Shuaib, M., Isaioglou, I., Abel, S., Gupta, M., Esau, L., Mourier, T.,
+Nugmanova, R., Mfarrej, S., Shivapurkar, R., Stead, Z., Rached, F. B.,
+Ostwal, Y., Sougrat, R., Dada, A., … Pain, A. (2023). <span
+class="nocase">DNA-binding</span> protein <span>PfAP2-P</span> regulates
+parasite pathogenesis during malaria parasite blood stages. <em>Nature
+Microbiology</em>, <em>8</em>(11), 2154–2169. <a
+href="https://doi.org/10.1038/s41564-023-01497-6">https://doi.org/10.1038/s41564-023-01497-6</a>
+</div>
+<div id="ref-tinto-fontHeatshockResponseRegulated2021" class="csl-entry"
+role="listitem">
+Tintó-Font, E., Michel-Todó, L., Russell, T. J., Casas-Vila, N., Conway,
+D. J., Bozdech, Z., Llinás, M., &amp; Cortés, A. (2021). A heat-shock
+response regulated by the <span>PfAP2-HS</span> transcription factor
+protects human malaria parasites from febrile temperatures. <em>Nature
+Microbiology</em>, <em>6</em>(9), 1163–1174. <a
+href="https://doi.org/10.1038/s41564-021-00940-w">https://doi.org/10.1038/s41564-021-00940-w</a>
+</div>
+</div>
+</body>
+</html>

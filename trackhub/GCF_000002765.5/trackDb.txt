@@ -6,6 +6,7 @@ longLabel P. falciparum chromatin states during the IDC
 type bigBed
 priority 1
 visibility dense
+html docs/chromatin_states.html
 
 track PfalChromStates_10hpi
 parent PfalChromStates on
@@ -44,6 +45,7 @@ shortLabel IDC Histone Marks
 longLabel P. falciparum IDC Histone Marks and Accessibility
 type bigWig
 visibility full
+html docs/histone_marks.html
 autoScale off
 priority 20
 dragAndDrop subTracks
@@ -608,6 +610,7 @@ compositeTrack on
 shortLabel IDC TF Binding
 longLabel P. falciparum IDC Transcription Factor ChIP-seq
 visibility full
+html docs/TF_datasets.html
 priority 100
 dragAndDrop subTracks
 subGroup1 view Views SIG=Signal PKS=Peaks

@@ -24,6 +24,7 @@ def create_chrom_state_trackdb(file_list_path, base_url, parent_track_id):
     print(f"type bigBed")
     print(f"priority 1")
     print(f"visibility dense") # Parent container visibility
+    print(f"html docs/chromatin_states.html")
     # Add other parent track settings if needed (e.g., group, html)
     print("")
 
@@ -155,6 +156,7 @@ def create_signal_trackdb(file_list_path, base_url, parent_track_id):
     print(f"longLabel P. falciparum IDC Histone Marks and Accessibility")
     print(f"type bigWig")
     print(f"visibility full")
+    print(f"html docs/histone_marks.html")
     print(f"autoScale off")
     print(f"priority 20")
     print(f"dragAndDrop subTracks") # Enable drag-and-drop rearrangement
@@ -333,6 +335,7 @@ def create_tf_trackdb(file_list_path, base_url, parent_track_id):
     print(f"shortLabel IDC TF Binding")
     print(f"longLabel P. falciparum IDC Transcription Factor ChIP-seq")
     print(f"visibility full")
+    print(f"html docs/TF_datasets.html")
     print(f"priority 100")
     print(f"dragAndDrop subTracks")
 
