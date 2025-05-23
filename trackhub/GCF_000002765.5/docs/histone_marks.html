@@ -1,224 +1,47 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Chromatin Tracks</title>
-  <style>
-    body {
-      margin: 0 auto;
-      hyphens: auto;
-      overflow-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    svg {
-      height: auto;
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    code {
-      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
-      font-size: 85%;
-      margin: 0;
-      hyphens: manual;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-      overflow-wrap: normal;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      background-color: #1a1a1a;
-      border: none;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-    }
-    th {
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC ul {
-      padding-left: 1.3em;
-    }
-    #TOC > ul {
-      padding-left: 0;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
-</head>
-<body>
-<header id="title-block-header">
-<h1 class="title">Chromatin Tracks</h1>
-</header>
+<h1>Chromatin Tracks</h1>
 <p>These tracks show processed histone modification data as well as
 ATAC-seq data from a variety of labs. See methods section for processing
 details.</p>
-<p><strong>ATAC</strong> — <span class="citation"
-data-cites="toenhakeChromatinAccessibilityBasedCharacterization2018">(Toenhake
-et al., 2018)</span></p>
-<p><strong>H2A.Z</strong> — <span class="citation"
-data-cites="tangHistoneModificationsAssociated2020">(Tang et al.,
-2020)</span></p>
-<p><strong>H3K18ac</strong> — <span class="citation"
-data-cites="tangHistoneModificationsAssociated2020">(Tang et al.,
-2020)</span></p>
-<p><strong>H3K27ac</strong> — <span class="citation"
-data-cites="tangHistoneModificationsAssociated2020">(Tang et al.,
-2020)</span></p>
-<p><strong>H3K4me1</strong> — <span class="citation"
-data-cites="tangHistoneModificationsAssociated2020">(Tang et al.,
-2020)</span></p>
-<p><strong>H3K4me3</strong> — <span class="citation"
-data-cites="bartfaiH2ADemarcatesIntergenic2010">(Bartfai et al.,
-2010)</span></p>
-<p><strong>H3K9ac</strong> — <span class="citation"
-data-cites="bartfaiH2ADemarcatesIntergenic2010">(Bartfai et al.,
-2010)</span></p>
-<p><strong>H3K9me3</strong> — <span class="citation"
-data-cites="jiangPfSETvsMethylationHistone2013">(Jiang et al.,
-2013)</span></p>
-<h3 class="unnumbered" id="references">References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent"
-data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-bartfaiH2ADemarcatesIntergenic2010" class="csl-entry"
-role="listitem">
+
+<p><strong>ATAC</strong> — (Toenhakeet al., 2018)</p>
+<p><strong>H2A.Z</strong> — (Tang et al.,2020)</p>
+<p><strong>H3K18ac</strong> — (Tang et al.,2020)</p>
+<p><strong>H3K27ac</strong> — (Tang et al.,2020)</p>
+<p><strong>H3K4me1</strong> — (Tang et al.,2020)</p>
+<p><strong>H3K4me3</strong> — (Bartfai et al.,2010)</p>
+<p><strong>H3K9ac</strong> — (Bartfai et al.,2010)</p>
+<p><strong>H3K9me3</strong> — (Jiang et al.,2013)</p>
+
+<h2>References</h2>
+<div>
 Bartfai, R., Hoeijmakers, W. A. M., Salcedo-Amaya, A. M., Smits, A. H.,
 Janssen-Megens, E., Kaan, A., Treeck, M., Gilberger, T.-W., Françoijs,
-K.-J., &amp; Stunnenberg, H. G. (2010). <span>H2A</span>.<span>Z</span>
+K.-J., &amp; Stunnenberg, H. G. (2010). H2A.Z
 demarcates intergenic regions of the plasmodium falciparum epigenome
-that are dynamically marked by <span>H3K9ac</span> and
-<span>H3K4me3</span>. <em>PLoS Pathogens</em>, <em>6</em>(12), e1001223.
-<a
-href="https://doi.org/10.1371/journal.ppat.1001223">https://doi.org/10.1371/journal.ppat.1001223</a>
+that are dynamically marked by H3K9ac and
+H3K4me3. <em>PLoS Pathogens</em>, <em>6</em>(12), e1001223. https://doi.org/10.1371/journal.ppat.1001223
 </div>
-<div id="ref-jiangPfSETvsMethylationHistone2013" class="csl-entry"
-role="listitem">
+
 Jiang, L., Mu, J., Zhang, Q., Ni, T., Srinivasan, P., Rayavara, K.,
 Yang, W., Turner, L., Lavstsen, T., Theander, T. G., Peng, W., Wei, G.,
 Jing, Q., Wakabayashi, Y., Bansal, A., Luo, Y., Ribeiro, J. M. C.,
-Scherf, A., Aravind, L., … Miller, L. H. (2013). <span>PfSETvs</span>
-methylation of histone <span>H3K36</span> represses virulence genes in
-<span>Plasmodium</span> falciparum. <em>Nature</em>, <em>499</em>(7457),
-223–227. <a
-href="https://doi.org/10.1038/nature12361">https://doi.org/10.1038/nature12361</a>
+Scherf, A., Aravind, L., … Miller, L. H. (2013). PfSETvs
+methylation of histone H3K36 represses virulence genes in
+Plasmodium falciparum. <em>Nature</em>, <em>499</em>(7457),
+223–227. https://doi.org/10.1038/nature12361
 </div>
-<div id="ref-tangHistoneModificationsAssociated2020" class="csl-entry"
-role="listitem">
+
 Tang, J., Chisholm, S. A., Yeoh, L. M., Gilson, P. R., Papenfuss, A. T.,
 Day, K. P., Petter, M., &amp; Duffy, M. F. (2020). Histone modifications
 associated with gene expression and genome accessibility are dynamically
-enriched at <span>Plasmodium</span> falciparum regulatory sequences.
-<em>Epigenetics &amp; Chromatin</em>, <em>13</em>(1), 50. <a
-href="https://doi.org/10.1186/s13072-020-00365-5">https://doi.org/10.1186/s13072-020-00365-5</a>
+enriched at Plasmodium falciparum regulatory sequences.
+<em>Epigenetics &amp; Chromatin</em>, <em>13</em>(1), 50. https://doi.org/10.1186/s13072-020-00365-5
 </div>
-<div id="ref-toenhakeChromatinAccessibilityBasedCharacterization2018"
-class="csl-entry" role="listitem">
+
 Toenhake, C. G., Fraschka, S. A.-K., Vijayabaskar, M. S., Westhead, D.
 R., van Heeringen, S. J., &amp; Bártfai, R. (2018). Chromatin
-<span>Accessibility-Based Characterization</span> of the <span>Gene
-Regulatory Network Underlying Plasmodium</span> falciparum
-<span>Blood-Stage Development</span>. <em>Cell Host &amp; Microbe</em>,
-<em>23</em>(4), 557–569.e9. <a
-href="https://doi.org/10.1016/j.chom.2018.03.007">https://doi.org/10.1016/j.chom.2018.03.007</a>
+Accessibility-Based Characterization of the Gene
+Regulatory Network Underlying Plasmodium falciparum
+Blood-Stage Development. <em>Cell Host &amp; Microbe</em>,
+<em>23</em>(4), 557–569.e9. https://doi.org/10.1016/j.chom.2018.03.007
 </div>
-</div>
-</body>
-</html>
